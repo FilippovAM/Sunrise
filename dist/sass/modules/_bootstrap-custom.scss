@@ -1,0 +1,24 @@
+.row-inline {
+  letter-spacing: -4px;
+  font-size: 0;
+}
+
+.row-inline > *[class*="col-"] {
+  float: none;
+  display: inline-block;
+  letter-spacing: 0;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.row-inline.align-middle > *[class*="col-"] {
+  vertical-align: middle;
+}
+
+.row-inline.align-bottom > *[class*="col-"] {
+  vertical-align: bottom;
+}
+
+.row-inline.align-top > *[class*="col-"] {
+  vertical-align: top;
+}

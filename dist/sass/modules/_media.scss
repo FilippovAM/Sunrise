@@ -1,0 +1,30 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+  .customers {
+    background-image: url('../img/customers@2x.png');
+    background-size: 204px 245px;
+  }
+
+  .customers-holostik {
+    background-size: 100%;
+    background-position: -10px 5px;
+  }
+
+  .customers-sunrise-passion {
+    background-position: -10px -26px;
+  }
+
+  .customers-yonex {
+    background-position: -10px -73px;
+  }
+
+  .customers-mikasa {
+    background-position: -10px -136px;
+  }
+
+  .customers-sunrise-click {
+    background-position: -10px -190px;
+  }
+}
+
+

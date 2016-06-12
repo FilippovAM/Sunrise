@@ -1,0 +1,11 @@
+{
+  "name": "sunrise",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap-sass-official": "~3.3.4",
+    "Swiper": "swiper#^3.3.1"
+  },
+  "devDependencies": {
+    "jquery-prettyPhoto": "^3.1.6"
+  }
+}
