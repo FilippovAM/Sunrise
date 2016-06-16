@@ -1,0 +1,153 @@
+.modal {
+  .img-responsive {
+    width: 100%;
+  }
+}
+
+.modal-dialog {
+  width: 920px;
+}
+
+.modal-header {
+  border-bottom: none;
+
+  .close {
+    font-size: 25px;
+    position: relative;
+    right: -25px;
+    top: -25px;
+  }
+}
+
+.modal-content {
+  padding: 35px;
+}
+
+.modal-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #0054a6;
+}
+
+.modal-text {
+  font-size: 13px;
+  color: #363636;
+  text-align: justify;
+}
+
+.modal-sub-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #898989;
+  margin-bottom: 20px;
+}
+
+.modal-sub-title-small {
+  font-size: 14px;
+  &.color-black {
+    font-size: 16px;
+  }
+}
+
+.separate-section {
+  margin-top: 30px;
+}
+
+.modal-register {
+  color: #363636;
+
+  .modal-body {
+    padding-top: 30px;
+  }
+
+  .modal-dialog {
+    width: 660px;
+  }
+  .modal-title {
+    color: #363636;
+  }
+  .section-separator {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: auto;
+    max-width: none;
+  }
+  .bfh-selectbox .bfh-selectbox-toggle {
+    padding-top: 15px;
+  }
+
+  .modal-footer {
+    border-top: none;
+
+    a.btn {
+      width: 100%;
+      max-width: 180px;
+      margin-top: 25px;
+      font-weight: bold;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+    }
+  }
+
+  .section-separator {
+    margin-top: 5px;
+  }
+}
+
+.select-placeholder {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #959595;
+  background-color: transparent;
+}
+
+.text-important {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.modal-contact {
+  .modal-sub-title:first-child {
+    margin-top: 0;
+  }
+
+  .modal-sub-title {
+    margin-bottom: 10px;
+  }
+
+  i.fa-map-marker {
+    font-size: 23px;
+  }
+  i.fa-phone {
+    font-size: 20px;
+  }
+  .modal-sub-title {
+    font-size: 20px;
+  }
+}
+
+.contact-ul {
+  margin: 20px 0;
+  li {
+    margin: 10px 0;
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+  i.fa {
+    color: #0054a6;
+    font-size: 17px;
+    top: 0;
+  }
+}
+
+.container-contact-ul {
+  margin-top: 50px;
+}
+

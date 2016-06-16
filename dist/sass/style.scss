@@ -1,8 +1,8 @@
-@import "bootstrap-custom";
-@import "sprite-customers";
-@import "tooltip";
+@import "modules/_bootstrap-custom";
+@import "modules/_sprite-customers";
+@import "modules/_tooltip";
+@import "modules/modal";
 
-@import "media";
 
 body {
   font-family: 'Arial','sans-serif';
@@ -25,11 +25,17 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .main {
   padding: 30px 0;
   background-color: #fff;
+}
+
+.logo-container {
+  display: inline-block;
+  min-width: 230px;
 }
 
 .main-header {
@@ -38,7 +44,7 @@ body {
   .title-container {
     position: relative;
     background: no-repeat url('../img/main-header-bg.png');
-    padding-left: 80px;
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 646px;
@@ -46,9 +52,16 @@ body {
     color: #facc2e;
     margin: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 25px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.36);
+    &.visible-xs {
+      height: auto;
+      width: 100%;
+      background-size: cover !important;
+    }
   }
+
 
   ul li {
     display: inline-block;
@@ -87,27 +100,24 @@ body {
   }
 
   .step {
-    height: 385px;
     padding: 95px 20px 20px;
     background-color: #fff200;
     -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     -moz-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
+    background-size: cover !important;
   }
 
   .step_1 {
     background: no-repeat url(../img/step_1.png);
-    background-size: 100%;
   }
 
   .step_2 {
     background: no-repeat url(../img/step_2.png);
-    background-size: 100%;
   }
 
   .step_3 {
     background: no-repeat url(../img/step_3.png);
-    background-size: 100%;
   }
 
   & > p {
@@ -146,8 +156,7 @@ body {
   }
 
   .code-cards-title {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 25px;
     position: absolute;
     top: 20px;
     left: 0;
@@ -158,7 +167,6 @@ body {
     color: #fff;
     text-shadow: 0 4px 4px rgba(0, 0, 1, .28);
     width: 100%;
-    height: 74px;
     background-color: #0054a6;
     -webkit-box-shadow: 0 5px 9px rgba(0, 0, 1, .23);
     -moz-box-shadow: 0 5px 9px rgba(0, 0, 1, .23);
@@ -183,6 +191,10 @@ body {
       border-left: 8px solid #002d62;
       border-top: 8px solid #002d62;
     }
+
+    h2 {
+      margin: 0;
+    }
   }
 
 }
@@ -193,7 +205,7 @@ body {
 
   .swiper-container {
     width: 800px;
-    height: 190px;
+    padding: 45px 0;
 
     a[rel="prettyPhoto[pp_gal]"] img {
       width: 100%;
@@ -210,7 +222,7 @@ body {
     width: 55px;
     height: 55px;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     cursor: pointer;
     margin-left: -27px;
@@ -260,11 +272,17 @@ body {
       border-left: 8px solid #004b24;
       border-top: 8px solid #004b24;
     }
+
+    iframe {
+      width: 100%;
+      height: 288px;
+    }
   }
 
   .find-out-container {
     padding: 40px;
     background: no-repeat url('../img/girl.png');
+    background-size: cover !important;
   }
 
   .figure-container {
@@ -301,6 +319,7 @@ body {
       content: '/';
       position: relative;
       left: -10px;
+      color: #898989;
     }
 
     &:first-child::before {
@@ -308,7 +327,14 @@ body {
     }
 
     a {
+      cursor: pointer;
+      padding: 7px;
+      display: inline-block;
       color: #898989;
+
+      -webkit-transform: skew(-10deg);
+      -moz-transform: skew(-10deg);
+      -o-transform: skew(-10deg);
     }
   }
 }
@@ -329,6 +355,50 @@ body {
   }
 }
 
+[data-text]{
+  vertical-align: top;
+}
+
+[data-text] > span{
+  position: absolute;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.form-control {
+  height: 50px;
+  border-color: #959595;
+}
+
+.control-label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.color-black {
+  color: black;
+}
+
+#map {
+  max-width: 450px;
+  width: 100%;
+  height: 300px;
+  float: right;
+}
+
+.scrape-ticket {
+  margin-left: 15px;
+}
+
+.form-group.has-warning .glyphicon {
+  display:  none;
+}
 
 
 

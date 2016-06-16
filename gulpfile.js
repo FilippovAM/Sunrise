@@ -41,6 +41,7 @@ gulp.task('bower', function () {
   var jsDir = config.publicDir + 'js/vendor';
   var cssDir = config.publicDir + 'css';
 
+
   return gulp.src(mainBowerFiles())
 
     // JS, EXCLUDING .min.js
@@ -75,8 +76,7 @@ gulp.task('styles', function () {
     sourcemap: true,
     compass  : true,
     loadPath : [
-      config.bowerDir + 'bootstrap-sass-official/assets/stylesheets',
-      config.bowerDir + 'font-awesome/scss'
+      config.bowerDir + 'bootstrap-sass-official/assets/stylesheets'
     ],
     style    : 'compressed'
   })

@@ -28,6 +28,15 @@
 
     <link rel="stylesheet" href="build/js/vendor/jquery-prettyPhoto/css/prettyPhoto.css">
     <link rel="stylesheet" href="build/js/vendor/Swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"/>
+    <link rel="stylesheet" href="build/js/vendor/prettyforms/prettyforms.css"/>
+
 
     <script src="build/js/libs/modernizr/modernizr.js"></script>
     <!--FONT PATH ---------------------------->
@@ -40,21 +49,449 @@
             font-style: normal;
         }
     </style>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='build/js/vendor/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-
-<!-- Здесь пишем код -->
 <div class="wrapper">
+    <!--modal About us-->
+    <div class="modal fade modal-about" tabindex="-1" role="dialog" id="modal_about_us">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                    <h3 class="modal-title text-center">About Us</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p class="modal-text">Sunrise & Co (Pte) Ltd. headquartered in Singapore is one of the
+                                leading
+                                wholesalers/distributors of branded sports equipment, accessories, apparel and sports
+                                footwear in several countries of South East Asia and South Asia including : Malaysia,
+                                India, Hong Kong, Macau, Indonesia, Vietnam, Philippines, Brunei, Mauritius, Sri Lanka,
+                                Pakistan, Maldives, Bangladesh and Nepal.</p>
+
+                            <div class="separate-section">
+                                <h4 class="modal-sub-title">MISSION STATEMENT</h4>
+
+                                <p class="modal-text">To be the No. 1 sports good and lifestyle company in Asia,
+                                    providing a healthy
+                                    lifestyle", Sunrise is dedicated to the sale of high-quality, authentic sports
+                                    equipment, and also to the development and promotion of an active sport
+                                    lifestyle.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <img class="img-responsive" src="build/img/whirligig.jpg" alt="whirligig"/>
+                        </div>
+                    </div>
+                    <div class="row separate-section">
+                        <div class="col-xs-12">
+                            <h4 class="modal-sub-title">HISTORY</h4>
+
+                            <p class="modal-text">More than four decades "Yonex" the world leader in the manufacture of
+                                badminton
+                                equipment, accessories etc and Sunrise forged a partnership to enhance and foster a
+                                greater interest in badminton & simultaneously endeavour to raise the standard of the
+                                game professionally. Yonex and Sunrise have over the years worked together to nurture
+                                and develop badminton and position it as a leading sport on the world map, through
+                                various initiatives including sponsorship of leading tournaments, national badminton
+                                associations and leading badminton players. Similarly, Sunrise has a long standing
+                                association with world renowned Game ball brand "Mikasa" which has remained the Official
+                                Volleyball of the Olympics since 1964 until the upcoming Rio 2016 Olympics games.</p>
+                        </div>
+                    </div>
+                    <div class="row separate-section">
+                        <div class="col-xs-12">
+                            <h4 class="modal-sub-title">SPONSORSHIP</h4>
+
+                            <p class="modal-text">Sunrise, together with its principal Yonex, sponsors the official
+                                attire for the
+                                Singapore Contingent in various international events such as Olympics, Youth Olympics,
+                                SEA Games, Commonwealth Games & Asian Games. The renowned game ball brand Mikasa,
+                                exclusively distributed by Sunrise is the Official Supplier of volleyballs to the
+                                International Volleyball Federation (FIVB) until 2016. Mikasa is also the official game
+                                ball for soccer, basketball, handball, korfball, water polo, etc. in several countries
+                                all over the world. In Singapore, Mikasa is the official game ball of the Football
+                                Association of Singapore and the Singapore National Games.</p>
+                        </div>
+                    </div>
+                    <div class="row separate-section">
+                        <div class="col-xs-12">
+                            <h4 class="modal-sub-title">SOCIAL COMMITMENT</h4>
+
+                            <p class="modal-text">Sunrise actively contributes to the development of sports in the
+                                community too. For
+                                instance, it co-sponsors the badminton training schemes administered by the Singapore
+                                Sports Council to groom national players. Sunrise also sponsors individual badminton
+                                players in Singapore, encouraging them to give their best to the game of badminton.
+                                The promotion and growth of sports continues to be the core commitment of Sunrise and
+                                this is what drives the company forward to greater heights.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--******************-->
+
+
+    <!--modal Register-->
+    <div class="modal modal-register fade" tabindex="-1" role="dialog" id="modal_register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form role="form" novalidate method="post" action="">
+                    <div class="modal-header">
+                        <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                        <h3 class="modal-title text-center">REGISTER</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputFirstName">first name</label>
+
+                                    <input type="text" class="form-control"
+                                           id="inputFirstName" name="firstName" data-validation="notempty;"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputLastName">last name</label>
+
+                                    <input type="text" class="form-control"
+                                           id="inputLastName" name="lastName" data-validation="notempty;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputEmail">email address</label>
+
+                                    <input type="email" class="form-control"
+                                           id="inputEmail" name="email" data-validation="notempty;isemail;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputCountry">Select country</label>
+
+                                    <div class="bfh-selectbox bfh-countries" data-country="GB" data-flags="true">
+                                        <input type="hidden" value="" id="inputCountry">
+                                        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox"
+                                           href="#">
+                                            <span class="bfh-selectbox-option input-medium" data-option=""></span>
+                                            <b class="caret"></b>
+                                        </a>
+
+                                        <div class="bfh-selectbox-options">
+                                            <input type="text" class="bfh-selectbox-filter">
+
+                                            <div role="listbox">
+                                                <ul role="option">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputTelephone">telephone</label>
+
+                                    <input type="tel" class="form-control"
+                                           id="inputTelephone" placeholder="NUMBER" name="telephone"
+                                           data-validation="notempty;isphone;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-separator"></div>
+
+                        <p class="text-important">
+                            Register for purchase history of Badminton/Tennis Racket for any future
+                            warranty claim enquiry:
+                        </p>
+
+                        <div class="row">
+                            <div class="col-xs-7">
+                                <div class="form-group">
+                                    <label class="control-label">Purchase Date</label>
+
+                                    <div class="input-group date" id="datepicker">
+                                        <input type="text" class="form-control" name="date" data-validation="notempty;isdate;">
+                                               <span class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                                </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputModel">model</label>
+                                    <input type="text" class="form-control"
+                                           id="inputModel" name="model" data-validation="notempty;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputHologram">SUNRISE HOLOGRAM NUMBER (Number printed on the
+                                        Hologram)</label>
+                                    <input type="number" class="form-control"
+                                           id="inputHologram" name="hologram" data-validation="notempty;isnumeric;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputSerialNumber">SERIAL NUMBER ( Number printed on the racket
+                                        shaft)</label>
+                                    <input type="number" class="form-control"
+                                           id="inputSerialNumber" name="serialNumber"
+                                           data-validation="notempty;isnumeric;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputDealerShopName">DEALER’S SHOP NAME</label>
+                                    <input type="text" class="form-control"
+                                           id="inputDealerShopName" name="dealerShopName" data-validation="notempty;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label"
+                                           for="inputDealerReceipt">DEALER’S RECEIPT NO</label>
+                                    <input type="text" class="form-control"
+                                           id="inputDealerReceipt" name="dealerReceipt"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <p class="text-left">IMPORTANT: Kindly submit & send us the purchase details of your
+                            Badminton/Tennis
+                            Racquet by filling up above information within 7 days from the date of purchase.</p>
+
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-danger red-btn no-border-radius">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--******************-->
+
+
+    <!--modal Contact Us-->
+    <div class="modal fade modal-contact" tabindex="-1" role="dialog" id="modal_contact_us">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                    <h3 class="modal-title text-center">Contact Us</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h4 class="modal-sub-title">Singapore</h4>
+                            <h4 class="modal-sub-title color-black">SUNRISE & CO (PTE) LTD</h4>
+
+                            <div class="contact-ul">
+                                <p><b>Head Office</b></p>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-map-marker"></i>No.9 Kaki Bukit Crescent,<br>
+                                        Kaki Bukit Techpark 1<br>
+                                        Singapore 416240
+                                    </li>
+                                    <li><i class="fa-li fa fa-phone"></i><a href="tel:6562583377">(65) 6258 3377</a>
+                                    </li>
+                                    <li><i class="fa-li fa fa-fax"></i><a>(65) 6258 2456</a></li>
+                                    <li><i class="fa-li fa fa-envelope"></i><a href="mailto:info@risesun.com.sg">info@risesun.com.sg</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-7 text-right">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">MALAYSIA</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE SPORTS SDN.
+                                    BHD.</h4>
+
+                                <div class="contact-ul">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>14-1 Jalan 6/91,<br>
+                                            Taman Shamelin Perkasa<br>
+                                            Cheras, 56100 Kuala Lumpur,<br>
+                                            Malaysia.
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:60392855123">(60-3) 9285
+                                            5123</a>
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(60-3) 9283 5517</a></li>
+                                        <li><i class="fa-li fa fa-envelope"></i><a
+                                                href="mailto:sunrise_malaysia@sunrisesports.com.my">sunrise_malaysia@sunrisesports.com.my</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">HONG KONG</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE SPORTS
+                                    LIMITED </h4>
+
+                                <div class="contact-ul">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>Unit 10, 6th Floor Vanta, Industrial
+                                            Centre<br>
+                                            No. 21-33 Tai Lin Pai Road,<br>
+                                            Kwai Chung, N.T. Hong Kong<br>
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:85224244185">(852) 2424
+                                            4185</a>,<a
+                                                href="tel:85226100960">2610 0960</a>,<a href="tel:85226101214">2610
+                                            1214</a>
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(852) 2480 0795</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">INDONESIA</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE & COMPANY (PTE)
+                                    LTD</h4>
+
+                                <div class="contact-ul">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>PT. SUNRISE INDONESIA<br>
+                                            22nd Floor, Graha Mandiri,<br>
+                                            61 JI. Imam Bonjol Jakarta Pusat,<br>
+                                            Indonesia – 10310
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:622131936859">(62-21) 3193
+                                            6859</a>,<a
+                                                href="tel:622131936849">3193 6849</a>
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(62-21) 3193 1940</a></li>
+                                        <li><i class="fa-li fa fa-envelope"></i><a
+                                                href="mailto:risesun@indosat.net.id">risesun@indosat.net.id</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">INDIA</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE SPORTS (INDIA)
+                                    PRIVATE LIMITED</h4>
+
+                                <div class="contact-ul">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>62, Upper Ground Floor,<br>
+                                            World Trade Centre<br>
+                                            Babar Road, New Delhi - 110001<br>
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:90114358824064">(90-11)
+                                            43588240-64</a> (25 Lines)
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(90-11) 4358 8259</a></li>
+                                        <li><i class="fa-li fa fa-envelope"></i><a
+                                                href="mailto:sunrise@risesun.co.in">sunrise@risesun.co.in</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--******************-->
+
+
     <div class="container">
         <header class="header">
             <div class="row row-inline align-middle">
-                <div class="col-sm-6">
-                    <a href=""><img src="build/img/logo.jpg" alt="Sunrise"/></a>
+                <div class="col-xs-8">
+                    <a href="" class="logo-container"><img class="pull-left" src="build/img/logo_B1.gif" alt="Sunrise"/><img
+                            class="pull-left" src="build/img/logo_B2.png" alt="" Sunrise/></a>
                 </div>
-                <div class="col-sm-6 text-right">
-                    <a class="link" href="" data-toggle="tooltip" data-placement="bottom"
+                <div class="col-xs-4 text-right">
+                    <a class="link" data-toggle="modal" data-target="#modal_register" data-toggle-ttoltip="tooltip"
+                       data-placement="bottom"
                        title="Register your Badminton Racket purchase details here for future enquiry">register</a>
                 </div>
             </div>
@@ -62,10 +499,16 @@
         <main class="main">
             <header class="main-header">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="title-container">Look for genuine, authentic and original.</h3>
+                    <div class="col-lg-6 col-md-12">
+                        <h3 class="title-container hidden-xs" id="title-animated"
+                            data-text='Look for genuine, authentic and original products | Beware of counterfeit & imitation products'>
+                        </h3>
+
+                        <h3 class="visible-xs title-container">
+                            Look for genuine, authentic and original products
+                        </h3>
                     </div>
-                    <div class="col-sm-6 text-right">
+                    <div class="col-lg-6 hidden-md hidden-sm hidden-xs text-right">
                         <ul>
                             <li>
                                 <img width="140" height="60" src="build/img/yonex.png" alt="YONEX"/>
@@ -86,16 +529,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="step step_1">
                                 <p class="title-step">step <span>01</span></p>
 
                                 <p class="title-step-text">scratch code</p>
 
-                                <img src="build/img/label.png" alt="label"/>
+                                <img class="scrape-ticket" src="build/img/scrape-ticket.gif" alt="label"/>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="step step_2">
                                 <p class="title-step">step <span>02</span></p>
 
@@ -109,7 +552,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="step step_3">
                                 <p class="title-step">step <span>03</span></p>
 
@@ -138,38 +581,54 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="build/img/1.jpg" rel="prettyPhoto[pp_gal]"
-                               title="You can add caption to pictures."><img src="build/img/1.jpg" alt="Yonex"/></a>
+                            <a href="build/img/slider/Aerosensa_Mavis.png" rel="prettyPhoto[pp_gal]"
+                               title="Aerosensa Mavis"><img src="build/img/slider/Aerosensa_Mavis.png"
+                                                            alt="Aerosensa Mavis"/></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="build/img/slider/Apparel_tag.png" rel="prettyPhoto[pp_gal]"
+                               title="Aerosensa Mavis"><img src="build/img/slider/Apparel_tag.png"
+                                                            alt="Apparel tag"/></a>
 
                         </div>
                         <div class="swiper-slide">
-                            <a href="build/img/2.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/2.jpg"
-                                                                                     alt="Yonex"/></a>
+                            <a href="build/img/slider/Grips.png" rel="prettyPhoto[pp_gal]"
+                               title="Grips"><img src="build/img/slider/Grips.png"
+                                                  alt="Grips"/></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="build/img/slider/Mikasa_ball.png" rel="prettyPhoto[pp_gal]" title="Mikasa">
+                                <img src="build/img/slider/Mikasa_ball.png" alt="Mikasa"/></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="build/img/slider/Racquet_full.png" rel="prettyPhoto[pp_gal]"
+                               title="Racquet full"><img src="build/img/slider/Racquet_full.png"
+                                                         alt="Racquet full"/></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="build/img/slider/Royalty_Box_w_shoe.png" rel="prettyPhoto[pp_gal]"
+                               title="Royalty Box shoe"><img src="build/img/slider/Royalty_Box_w_shoe.png"
+                                                             alt="Royalty Box shoe"/></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="build/img/slider/Shoe_Box_w_shoe.png" rel="prettyPhoto[pp_gal]"
+                               title="Shoe Box shoe"><img src="build/img/slider/Shoe_Box_w_shoe.png"
+                                                          alt="Shoe Box shoe"/></a></div>
+                        <div class="swiper-slide">
+                            <a href="build/img/slider/String_edited.png" rel="prettyPhoto[pp_gal]" title="String"><img
+                                    src="build/img/slider/String_edited.png"
+                                    alt="String"/></a></div>
 
-                        </div>
                         <div class="swiper-slide">
-                            <a href="build/img/3.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/3.jpg"
-                                                                                     alt="Yonex"/></a>
+                            <a href="build/img/slider/Bag_tag.png" rel="prettyPhoto[pp_gal]"
+                               title="Bag tag"><img src="build/img/slider/Bag_tag.png"
+                                                    alt="Bag tag"/></a>
                         </div>
+
                         <div class="swiper-slide">
-                            <a href="build/img/4.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/4.jpg"
-                                                                                     alt="Yonex"/></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="build/img/5.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/5.jpg"
-                                                                                     alt="Nice building"/></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="build/img/6.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/6.jpg"
-                                                                                     alt="Yonex"/></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="build/img/7.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/7.jpg"
-                                                                                     alt="Yonex"/></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="build/img/8.jpg" rel="prettyPhoto[pp_gal]"><img src="build/img/8.jpg"
-                                                                                     alt="Yonex"/></a></div>
+                            <a href="build/img/slider/Tennis_full.png" rel="prettyPhoto[pp_gal]" title="Tennis"><img
+                                    src="build/img/slider/Tennis_full.png"
+                                    alt="Tennis"/></a></div>
 
                     </div>
 
@@ -184,10 +643,11 @@
             <div class="video-background">
                 <div class="video-container">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <img src="build/img/video-poster.png" alt=""/>
+                        <div class="col-sm-6 no-padding-right">
+                            <iframe src="https://www.youtube.com/embed/ohT6BVsYvhw" frameborder="0"
+                                    allowfullscreen></iframe>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 no-padding-left">
                             <div class="find-out-container">
                                 <div class="figure-container">
                                     <h3>
@@ -202,12 +662,12 @@
             </div>
 
             <div class="text-center">
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills" id="nav-footer">
                     <li class="active"><a href="#">home</a></li>
-                    <li><a href="#">about us</a></li>
+                    <li><a data-toggle="modal" data-target="#modal_about_us">about us</a></li>
                     <li><a href="#">privacy policy</a></li>
                     <li><a href="#">terms of use</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a data-toggle="modal" data-target="#modal_contact_us">contact</a></li>
                 </ul>
             </div>
 
@@ -246,9 +706,15 @@
 <script src="build/js/vendor/jquery.min.js"></script>
 <script src="build/js/vendor/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
 <script src="build/js/vendor/Swiper/dist/js/swiper.min.js"></script>
-<script src="build/js/vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="build/js/vendor/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+<script src="build/js/vendor/prettyforms/prettyforms.js"></script>
+<script src="build/js/vendor/prettyforms/prettyforms_en.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
-<script src="build/js/common.js"></script>
+<script src="build/js/common.min.js"></script>
 
 </body>
 </html>
