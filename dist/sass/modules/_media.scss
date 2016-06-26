@@ -143,6 +143,18 @@ only screen and (min-resolution: 144dpi) {
   .modal {
     padding: 0 15px !important;
   }
+
+  .code-cards .step.step_1 {
+    margin-top: 110px;
+  }
+}
+
+
+@media screen and (max-width: 390px){
+  .header .logo-column {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
