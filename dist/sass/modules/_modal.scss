@@ -63,10 +63,12 @@
 
   .modal-body {
     padding-top: 30px;
+    padding-right: 130px;
+    padding-left: 130px;
   }
 
   .modal-dialog {
-    width: 660px;
+    width: 920px;
   }
   .modal-title {
     color: #363636;
@@ -83,6 +85,15 @@
 
   .modal-footer {
     border-top: none;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-bottom: 0;
+
+    button[type="submit"] {
+      margin-top: 35px;
+      width: 100%;
+      max-width: 175px;
+    }
 
     a.btn {
       width: 100%;
@@ -150,4 +161,15 @@
 .container-contact-ul {
   margin-top: 50px;
 }
+
+.ol-inside,
+.ul-inside {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+ol.ol-number.start-number{
+  counter-reset: foo;
+}
+
 

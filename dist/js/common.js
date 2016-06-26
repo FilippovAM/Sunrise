@@ -5,7 +5,7 @@ $(function () {
     });
 
 
-    // animated title index.html
+    /*// animated title index.html
     $('#title-animated').attr("data-text", function (i, d) {
         var $self = $(this),
             $sentence = d.split("|"),
@@ -28,7 +28,7 @@ $(function () {
             c = ++c % tot;
         }());
 
-    });
+    });*/
 
 
     $('#nav-footer').on('click', 'li', function () {
@@ -79,12 +79,19 @@ $(function () {
     //prettyPhoto init
     $("a[rel^='prettyPhoto']").prettyPhoto();
 
+    // liScroll is a jQuery plugin that transforms any given unordered list into a scrolling News Ticker
+    $("ul#ticker").liScroll();
 
     $(window).load(function () {
 
         $(".loader_inner").fadeOut();
         $(".loader").delay(400).fadeOut("slow");
 
+    });
+
+
+    // modal contact-us show event
+    $('#modal_contact_us').on('shown.bs.modal', function () {
         // map
         var map = L.map('map').setView([1.335713, 103.906385], 17);
 
@@ -101,12 +108,11 @@ $(function () {
 
         map.on('popupopen', function (e) {
             var px = map.project(e.popup._latlng); // find the pixel location on the map where the popup anchor is
-            px.y -= e.popup._container.clientHeight / 2 // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+            px.y -= e.popup._container.clientHeight / 2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
             map.panTo(map.unproject(px), {animate: true}); // pan to new center
         });
     });
-
-
+    
 });
 
 

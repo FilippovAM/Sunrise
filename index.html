@@ -36,7 +36,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css"/>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"/>
     <link rel="stylesheet" href="build/js/vendor/prettyforms/prettyforms.css"/>
-
+    <link rel="stylesheet" href="build/js/libs/scroller/li-scroller.css"/>
 
     <script src="build/js/libs/modernizr/modernizr.js"></script>
     <!--FONT PATH ---------------------------->
@@ -55,106 +55,103 @@
 </head>
 
 <body>
-<div class="wrapper">
-    <!--modal About us-->
-    <div class="modal fade modal-about" tabindex="-1" role="dialog" id="modal_about_us">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+
+<!--modal About us-->
+<div class="modal fade modal-about" tabindex="-1" role="dialog" id="modal_about_us">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                <h3 class="modal-title text-center">About Us</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="modal-text">Sunrise & Co (Pte) Ltd. headquartered in Singapore is one of the leading
+                            wholesalers/distributors of branded sports equipment, accessories, apparel and sports
+                            footwear in several countries of South East Asia and South Asia including : Malaysia, India,
+                            Hong Kong, Macau, Indonesia, Vietnam, Philippines, Brunei, Mauritius, Sri Lanka, Pakistan,
+                            Maldives, Bangladesh and Nepal.</p>
+
+                        <div class="separate-section">
+                            <h4 class="modal-sub-title">MISSION STATEMENT</h4>
+
+                            <p class="modal-text">To be the No. 1 sports good and lifestyle company in Asia, providing a
+                                healthy lifestyle", Sunrise is dedicated to the sale of high-quality, authentic sports
+                                equipment, and also to the development and promotion of an active sport lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <img class="img-responsive" src="build/img/whirligig.jpg" alt="whirligig"/>
+                    </div>
+                </div>
+                <div class="row separate-section">
+                    <div class="col-xs-12">
+                        <h4 class="modal-sub-title">HISTORY</h4>
+
+                        <p class="modal-text">More than four decades "Yonex" the world leader in the manufacture of
+                            badminton equipment, accessories etc and Sunrise forged a partnership to enhance and foster
+                            a greater interest in badminton & simultaneously endeavour to raise the standard of the game
+                            professionally. Yonex and Sunrise have over the years worked together to nurture and develop
+                            badminton and position it as a leading sport on the world map, through various initiatives
+                            including sponsorship of leading tournaments, national badminton associations and leading
+                            badminton players. Similarly, Sunrise has a long standing association with world renowned
+                            Game ball brand "Mikasa" which has remained the Official Volleyball of the Olympics since
+                            1964 until the upcoming Rio 2016 Olympics games.</p>
+                    </div>
+                </div>
+                <div class="row separate-section">
+                    <div class="col-xs-12">
+                        <h4 class="modal-sub-title">SPONSORSHIP</h4>
+
+                        <p class="modal-text">Sunrise, together with its principal Yonex, sponsors the official attire
+                            for the Singapore Contingent in various international events such as Olympics, Youth
+                            Olympics, SEA Games, Commonwealth Games & Asian Games. The renowned game ball brand Mikasa,
+                            exclusively distributed by Sunrise is the Official Supplier of volleyballs to the
+                            International Volleyball Federation (FIVB) until 2016. Mikasa is also the official game ball
+                            for soccer, basketball, handball, korfball, water polo, etc. in several countries all over
+                            the world. In Singapore, Mikasa is the official game ball of the Football Association of
+                            Singapore and the Singapore National Games.</p>
+                    </div>
+                </div>
+                <div class="row separate-section">
+                    <div class="col-xs-12">
+                        <h4 class="modal-sub-title">SOCIAL COMMITMENT</h4>
+
+                        <p class="modal-text">Sunrise actively contributes to the development of sports in the community
+                            too. For instance, it co-sponsors the badminton training schemes administered by the
+                            Singapore Sports Council to groom national players. Sunrise also sponsors individual
+                            badminton players in Singapore, encouraging them to give their best to the game of
+                            badminton. <br>
+                            The promotion and growth of sports continues to be the core commitment of Sunrise and this
+                            is what drives the company forward to greater heights.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--******************-->
+
+
+<!--modal Register-->
+<div class="modal modal-register fade" tabindex="-1" role="dialog" id="modal_register">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form role="form" novalidate method="post" action="">
                 <div class="modal-header">
                     <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
 
-                    <h3 class="modal-title text-center">About Us</h3>
+                    <h3 class="modal-title text-center">REGISTER</h3>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <p class="modal-text">Sunrise & Co (Pte) Ltd. headquartered in Singapore is one of the
-                                leading
-                                wholesalers/distributors of branded sports equipment, accessories, apparel and sports
-                                footwear in several countries of South East Asia and South Asia including : Malaysia,
-                                India, Hong Kong, Macau, Indonesia, Vietnam, Philippines, Brunei, Mauritius, Sri Lanka,
-                                Pakistan, Maldives, Bangladesh and Nepal.</p>
-
-                            <div class="separate-section">
-                                <h4 class="modal-sub-title">MISSION STATEMENT</h4>
-
-                                <p class="modal-text">To be the No. 1 sports good and lifestyle company in Asia,
-                                    providing a healthy
-                                    lifestyle", Sunrise is dedicated to the sale of high-quality, authentic sports
-                                    equipment, and also to the development and promotion of an active sport
-                                    lifestyle.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-5 text-right">
-                            <img class="img-responsive" src="build/img/whirligig.jpg" alt="whirligig"/>
-                        </div>
-                    </div>
-                    <div class="row separate-section">
-                        <div class="col-xs-12">
-                            <h4 class="modal-sub-title">HISTORY</h4>
-
-                            <p class="modal-text">More than four decades "Yonex" the world leader in the manufacture of
-                                badminton
-                                equipment, accessories etc and Sunrise forged a partnership to enhance and foster a
-                                greater interest in badminton & simultaneously endeavour to raise the standard of the
-                                game professionally. Yonex and Sunrise have over the years worked together to nurture
-                                and develop badminton and position it as a leading sport on the world map, through
-                                various initiatives including sponsorship of leading tournaments, national badminton
-                                associations and leading badminton players. Similarly, Sunrise has a long standing
-                                association with world renowned Game ball brand "Mikasa" which has remained the Official
-                                Volleyball of the Olympics since 1964 until the upcoming Rio 2016 Olympics games.</p>
-                        </div>
-                    </div>
-                    <div class="row separate-section">
-                        <div class="col-xs-12">
-                            <h4 class="modal-sub-title">SPONSORSHIP</h4>
-
-                            <p class="modal-text">Sunrise, together with its principal Yonex, sponsors the official
-                                attire for the
-                                Singapore Contingent in various international events such as Olympics, Youth Olympics,
-                                SEA Games, Commonwealth Games & Asian Games. The renowned game ball brand Mikasa,
-                                exclusively distributed by Sunrise is the Official Supplier of volleyballs to the
-                                International Volleyball Federation (FIVB) until 2016. Mikasa is also the official game
-                                ball for soccer, basketball, handball, korfball, water polo, etc. in several countries
-                                all over the world. In Singapore, Mikasa is the official game ball of the Football
-                                Association of Singapore and the Singapore National Games.</p>
-                        </div>
-                    </div>
-                    <div class="row separate-section">
-                        <div class="col-xs-12">
-                            <h4 class="modal-sub-title">SOCIAL COMMITMENT</h4>
-
-                            <p class="modal-text">Sunrise actively contributes to the development of sports in the
-                                community too. For
-                                instance, it co-sponsors the badminton training schemes administered by the Singapore
-                                Sports Council to groom national players. Sunrise also sponsors individual badminton
-                                players in Singapore, encouraging them to give their best to the game of badminton.
-                                The promotion and growth of sports continues to be the core commitment of Sunrise and
-                                this is what drives the company forward to greater heights.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-    <!--******************-->
-
-
-    <!--modal Register-->
-    <div class="modal modal-register fade" tabindex="-1" role="dialog" id="modal_register">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <form role="form" novalidate method="post" action="">
-                    <div class="modal-header">
-                        <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
-
-                        <h3 class="modal-title text-center">REGISTER</h3>
-                    </div>
+                <div class="scroll-container scroll-container-register">
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-sm-6">
@@ -239,7 +236,8 @@
                                     <label class="control-label">Purchase Date</label>
 
                                     <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control" name="date" data-validation="notempty;isdate;">
+                                        <input type="text" class="form-control" name="date"
+                                               data-validation="notempty;isdate;">
                                                <span class="input-group-addon">
                                                     <span class="fa fa-calendar"></span>
                                                 </span>
@@ -286,6 +284,7 @@
                             </div>
                         </div>
 
+
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="form-group">
@@ -318,53 +317,63 @@
                             <button type="submit" class="btn btn-danger red-btn no-border-radius">Submit</button>
                         </div>
                     </div>
-                </form>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-    <!--******************-->
-
-
-    <!--modal Contact Us-->
-    <div class="modal fade modal-contact" tabindex="-1" role="dialog" id="modal_contact_us">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
-
-                    <h3 class="modal-title text-center">Contact Us</h3>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <h4 class="modal-sub-title">Singapore</h4>
-                            <h4 class="modal-sub-title color-black">SUNRISE & CO (PTE) LTD</h4>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--******************-->
 
-                            <div class="contact-ul">
-                                <p><b>Head Office</b></p>
-                                <ul class="fa-ul">
-                                    <li><i class="fa-li fa fa-map-marker"></i>No.9 Kaki Bukit Crescent,<br>
-                                        Kaki Bukit Techpark 1<br>
-                                        Singapore 416240
-                                    </li>
-                                    <li><i class="fa-li fa fa-phone"></i><a href="tel:6562583377">(65) 6258 3377</a>
-                                    </li>
-                                    <li><i class="fa-li fa fa-fax"></i><a>(65) 6258 2456</a></li>
-                                    <li><i class="fa-li fa fa-envelope"></i><a href="mailto:info@risesun.com.sg">info@risesun.com.sg</a>
-                                    </li>
-                                </ul>
+
+<!--modal Contact Us-->
+<div class="modal fade modal-contact" tabindex="-1" role="dialog" id="modal_contact_us">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                <h3 class="modal-title text-center">Contact Us</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h4 class="modal-sub-title">Singapore</h4>
+                        <h4 class="modal-sub-title color-black">SUNRISE & CO (PTE) LTD</h4>
+
+                        <div class="contact-ul">
+                            <p><b>Head Office</b></p>
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-map-marker"></i>No.9 Kaki Bukit Crescent,<br>
+                                    Kaki Bukit Techpark 1<br>
+                                    Singapore 416240
+                                </li>
+                                <li><i class="fa-li fa fa-phone"></i><a href="tel:6562583377">(65) 6258 3377</a>
+                                </li>
+                                <li><i class="fa-li fa fa-fax"></i><a>(65) 6258 2456</a></li>
+                                <li><i class="fa-li fa fa-envelope"></i><a href="mailto:info@risesun.com.sg">info@risesun.com.sg</a>
+                                </li>
+                            </ul>
+
+                            <div class="mode">
+                                9am to 5pm (UTC+8)
+                                <br/>
+                                Monday to Friday
+                                <br/>
+                                Closed on Sat, Sun and Singapore public holidays
                             </div>
-
                         </div>
 
-                        <div class="col-sm-7 text-right">
-                            <div id="map"></div>
-                        </div>
                     </div>
 
+                    <div class="col-sm-7 text-right">
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <div class="scroll-container scroll-container-contact-us">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="container-contact-ul">
@@ -405,8 +414,8 @@
                                             Kwai Chung, N.T. Hong Kong<br>
                                         </li>
                                         <li><i class="fa-li fa fa-phone"></i><a href="tel:85224244185">(852) 2424
-                                            4185</a>,<a
-                                                href="tel:85226100960">2610 0960</a>,<a href="tel:85226101214">2610
+                                            4185</a>, <a
+                                                href="tel:85226100960">2610 0960</a>, <a href="tel:85226101214">2610
                                             1214</a>
                                         </li>
                                         <li><i class="fa-li fa fa-fax"></i><a>(852) 2480 0795</a></li>
@@ -433,7 +442,7 @@
                                             Indonesia – 10310
                                         </li>
                                         <li><i class="fa-li fa fa-phone"></i><a href="tel:622131936859">(62-21) 3193
-                                            6859</a>,<a
+                                            6859</a>, <a
                                                 href="tel:622131936849">3193 6849</a>
                                         </li>
                                         <li><i class="fa-li fa fa-fax"></i><a>(62-21) 3193 1940</a></li>
@@ -471,22 +480,1013 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">PHILIPPINES</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE & CO (PTE)
+                                    LTD</h4>
 
+                                <div class="contact-ul">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>Unit 804, 8/F Raffles Corporate
+                                            Centre,<br>
+                                            F. Ortigas Jr. Road (formerly Emerald Avenue),<br>
+                                            Ortigas Centre Pasig City, Philippines 1605<br>
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:6329140362">
+                                            (63-2) 9140 362/ 9140 363
+                                        </a>
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(63-2) 9140 361</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">VIETNAM</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE & CO (PTE)
+                                    LTD</h4>
+
+                                <div class="contact-ul">
+                                    <p><b>(Representative Office)</b></p>
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>#06-03, Prime Center, 53 QuangTrung
+                                            Street<br>
+                                            Hanoi, Vietnam
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:84439436039">
+                                            (84-4) 39436039
+                                        </a>
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(84-4) 39436040</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="container-contact-ul">
+                                <h4 class="modal-sub-title modal-sub-title-small">Ho Chi Minh City</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE & CO (PTE)
+                                    LTD</h4>
+
+                                <div class="contact-ul">
+                                    <p><b>(Representative Office)</b></p>
+                                    <ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-map-marker"></i>107-109-111 <br> Nguyen DinhChieu
+                                            Street Ward 6,District 3,<br>
+                                            Ho Chi Minh City Vietnam
+                                        </li>
+                                        <li><i class="fa-li fa fa-phone"></i><a href="tel:84862905768">
+                                            (84-8) 629 05768
+                                        </a>
+                                        </li>
+                                        <li><i class="fa-li fa fa-fax"></i><a>(84-8) 629 05768</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <!-- /.modal-content -->
+
+
         </div>
-        <!-- /.modal-dialog -->
+        <!-- /.modal-content -->
     </div>
-    <!-- /.modal -->
-    <!--******************-->
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--******************-->
 
 
+<!--modal Privacy Policy-->
+<div class="modal fade modal-privacy" tabindex="-1" role="dialog" id="modal_privacy">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                <h3 class="modal-title text-center">Privacy Policy</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-justify">
+                            <p class="modal-text">
+                                SUNRISE &amp; CO (PTE) LTD (hereinafter referred to as <b>“SUNRISE”</b>, “we” or
+                                “us”) recognises that you care how information about you collected in this Web Site
+                                is used and shared. SUNRISE has created this Privacy Policy to inform you of our
+                                information collection, use and sharing practices for this Web Site, including any
+                                other web sites, products, services or mobile applications operated by us.
+                            </p>
+
+                            <p class="modal-text">
+                                BY ACCESSING AND USING THIS WEB SITE, AND/OR PROVIDING YOUR PERSONAL INFORMATION AND
+                                DATA TO ANY OTHER WEB SITES, PRODUCTS, SERVICES OR MOBILE APPLICATIONS OPERATED BY
+                                US, YOU CONSENT TO THIS PRIVACY POLICY AND THE PURPOSES FOR WHICH INFORMATION ABOUT
+                                YOU ARE COLLECTED, USED OR DISCLOSED AS INDICATED HEREIN.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>IF YOU DO NOT CONSENT OR DO NOT AGREE TO OUR PRIVACY POLICY, PLEASE DO NOT
+                                    PROCEED FURTHER AND DO NOT PROVIDE ANY PERSONAL INFORMATION OR DATA.
+                                </b>
+                            </p>
+
+                            <p class="modal-text">
+                                <b><u>What Information About You Is Collected and Stored? </u></b>
+                            </p>
+
+                            <p class="modal-text">
+                                <b>Information you give us.</b> The personal information that you enter on this Web
+                                Site such as your electronic mail addresses and telephone numbers are collected and
+                                stored by us. All of this data is characterized by the fact that you have provided
+                                this information yourself. We use this information for the purposes described in
+                                this Privacy Policy. You can always have your personal data corrected, or object to
+                                further processing or removed by contacting us at the details stated below.
+                            </p>
+
+                            <p class="modal-text">
+                                Information automatically collected. We also automatically receive and store certain
+                                types of information whenever you visit this Web Site. For example, we collect your
+                                Internet Protocol (IP) address, browser information and reference site domain name
+                                every time you visit this Web Site. We also collect information regarding customer
+                                traffic patterns and site usage. We will use this information to analyse and improve
+                                this Web Site.
+                            </p>
+
+                            <p class="modal-text">
+                                Information collected using cookies. Also, like many other Web Sites, we use
+                                "cookies", which are files stored in your computer or mobile device by your web
+                                browser while browsing the Web Site. We use cookies to allow you to: navigate across
+                                pages of this Web Site efficiently; remember your preferences; and to help us
+                                recognize you and generally improve your browsing experience when you return to this
+                                Web Site.
+                            </p>
+
+                            <p class="modal-text"><b>Information Collected From Children</b></p>
+
+                            <p class="modal-text">
+                                We do not collect any personal information from anyone whom we know to be under the
+                                age of 18. If you are under the age of 18, you should use this Web Site only with
+                                the involvement or supervision of a parent or guardian and should not submit any
+                                personal information to us. In the event SUNRISE becomes aware that the person
+                                submitting the information is below the age of 18, we will attempt to delete this
+                                information as soon as possible.
+                            </p>
+
+                            <p class="modal-text">
+                                We shall not be in any way liable or responsible to any person for any loss or
+                                damage of any kind howsoever caused in the event any personal information is
+                                inadvertently collected from any person under the age of 18 arising out of or in
+                                relation to the use of this Web Site.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>Use of Information</b>
+                            </p>
+
+                            <ol class="modal-text ol-inside">We use the personal information we collect from you for
+                                the
+                                following purposes to:
+                                <li>
+                                    &nbsp; &nbsp; contact you about upcoming sales, promotions, and product
+                                    information;
+                                </li>
+                                <li>
+                                    &nbsp; &nbsp; invite you to participate in contests and other promotions;
+                                </li>
+                                <li>
+                                    &nbsp; &nbsp; help us learn more about our site visitors and customers and to
+                                    improve our business;
+                                </li>
+                                <li>
+                                    &nbsp; &nbsp; address problems with the Web Site, our business or our products
+                                    and
+                                    services and to protect the security of the Web Site and our business;
+                                </li>
+                                <li>
+                                    &nbsp; &nbsp; contact you about upcoming promotions and offers from our
+                                    partners;
+                                </li>
+                                <li>
+                                    &nbsp; &nbsp; invite you to participate in market research and surveys; and
+                                </li>
+                                <li>
+                                    &nbsp; &nbsp; otherwise to promote our Web Site and our businesses.
+                                </li>
+                            </ol>
+                            <p class="modal-text"><b><u>With Whom Do We Share Information? </u></b></p>
+
+                            <p class="modal-text">
+                                We do not share with others any personal information that you provide to us through
+                                this Web Site, except as described below.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>Third party services.</b> We may engage third parties to perform services in
+                                connection with the operation of our business. We may provide personal information
+                                to these third parties, but we authorize them to use this information only in
+                                connection with the services they perform. Examples of these services include
+                                marketing and promotional material distribution, e-mail messaging services, web site
+                                evaluation, data storage, data analysis and, where applicable, data cleansing or
+                                disposal.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>Where required by law or necessary.</b> We may release personal information if we
+                                believe in good faith that: the law or legal process requires it; we have received a
+                                valid administrative request from a law enforcement agency; or such release is
+                                necessary to protect the rights, property or safety of SUNRISE or any of our
+                                affiliates, business partners, customers or others.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>Marketing partners.</b> We may share non-personal information with our marketing
+                                partners, advertisers and others from time to time. Examples of such non-personal
+                                information include the number of users who visited this Web Site during a specific
+                                time period. This information generally is shared in an aggregated form.
+                            </p>
+
+                            <p class="modal-text"><b><u>External links</u></b></p>
+
+                            <p class="modal-text">
+                                Our Web Site, including any other web sites, products, services or mobile
+                                applications operated by us may, from time to time, contain links to external web
+                                sites. We are not responsible for the privacy policies or the content of such sites
+                                and we recommend that you read the privacy policies on any external sites you use.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>What Steps Are Taken To Keep Personal Information Secure?</b>
+                            </p>
+
+                            <p class="modal-text">
+                                We use various security measures, including encryption and authentication tools to
+                                protect the personal information received from you. However, please note that no
+                                transmission of data over the Internet or any other public network can be guaranteed
+                                to be 100% secure.
+                            </p>
+
+                            <p class="modal-text">
+                                Transfer of personal information overseas
+                            </p>
+
+                            <p class="modal-text">
+                                As the Internet is a global environment, collecting and processing personal
+                                information may involve the transmission of this data internationally, including
+                                outside the country where you are located. If you are located in a country with data
+                                protection law or privacy law, we may transfer your personal information to
+                                countries that may not guarantee the same level of protection for personal
+                                information as the one in which you reside. By giving your personal information to
+                                us or communicating electronically with us, you therefore acknowledge and agree to
+                                these transfers and for your personal information to be processed in this way.
+                            </p>
+
+                            <p class="modal-text"><b><u>Privacy Policy Changes</u></b></p>
+
+                            <p class="modal-text">
+                                From time to time, we may make changes to the Privacy Policy. This may be in
+                                relation to changes in the law, best practice or changes in our services. In this
+                                respect, we reserve the right to change this Privacy Policy at any time by posting
+                                an updated version here, and you should check here from time to time.
+                            </p>
+
+                            <p class="modal-text"><b><u>Queries Concerning This Privacy Policy</u></b></p>
+
+                            <p class="modal-text">
+                                If you would like to see the data SUNRISE holds on you (there can be a charge for
+                                this service) or if you have any questions or concerns related to this Privacy
+                                Policy and/or our practices, or a complaint or dispute, please email us or write to
+                                the following contact address stated below to the attention of the Privacy Officer.
+                            </p>
+
+                            <p class="modal-text">
+                                <b>SUNRISE &amp; CO (PTE) LTD</b><br>
+                                9 Kaki Bukit Crescent<br>
+                                Kaki Bukit Techpark 1<br>
+                                Singapore 416240<br>
+                                E-mail: <a href="mailto:info@risesun.com.sg">info@risesun.com.sg </a>
+                            </p>
+
+                            <p class="modal-text">
+                                Please provide us with your first name, last name, mailing address, email address
+                                and telephone number at the time of making such a request.
+                            </p>
+
+                            <p class="modal-text">This Privacy Policy was last updated on [14 March 2015].</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--******************-->
+
+
+<!--modal Privacy Policy-->
+<div class="modal fade modal-terms" tabindex="-1" role="dialog" id="modal_terms">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                <h3 class="modal-title text-center">TERMS OF SITE USE</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-justify">
+                            <p class="modal-text">
+                                The use of this Web Site is subject to the following terms and conditions, the
+                                Privacy
+                                Policy and any additional terms and conditions, rules, disclaimers and notices
+                                displayed
+                                elsewhere on this Web Site (collectively <b>“TERMS AND CONDITIONS”</b>).
+                            </p>
+
+                            <p class="modal-text">
+                                PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS WEB SITE. THE
+                                TERMS
+                                AND CONDITIONS APPLY TO ALL VISITS AND USE OF THIS WEBSITE, AS WELL AS TO THE
+                                CONTENT,
+                                INFORMATION, RECOMMENDATIONS, PRODUCTS AND/OR SERVICES PROVIDED TO YOU ON OR THROUGH
+                                THIS WEB SITE.
+                            </p>
+                            <br>
+
+                            <p class="modal-text">
+                                BY CONTINUING TO ACCESS OR USE THIS WEB SITE, YOU HEREBY AGREE TO ENTER INTO AN
+                                AGREEMENT WITH SUNRISE &amp; CO (PTE) LTD (HEREINAFTER REFERRED TO AS
+                                <b>“SUNRISE”</b>,
+                                “WE” OR “US”) AND TO BE UNCONDITIONALLY BOUND BY THESE TERMS AND CONDITIONS WHICH
+                                MAY BE
+                                AMENDED, MODIFIED OR VARIED BY SUNRISE AT ITS SOLE DISCRETION AT ANY TIME WITHOUT
+                                PRIOR
+                                NOTICE TO YOU.
+                            </p>
+                            <br>
+
+                            <p class="modal-text">
+                                YOUR CONTINUED USE OF THIS WEB SITE SHALL BE DEEMED AN ACCEPTANCE OF THESE TERMS AND
+                                CONDITIONS AS REVISED.
+                            </p>
+                            <br>
+
+                            <p class="modal-text"></p><b>IF YOU DO NOT ACCEPT THESE TERMS AND CONDITIONS, PLEASE DO
+                            NOT
+                            USE THIS WEB SITE.
+                        </b>
+                            <br>
+                            <br>
+                            <ol class="modal-text ol-inside list-unstyled list-number">
+                                <li>
+                                    <b>YOUR UNDERTAKING AND OBLIGATIONS
+                                        <br>
+                                        <br>
+                                    </b>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p>You represent, warrant and undertake :</p>
+                                            <ol class="list-unstyled list-lower-alpha">
+                                                <li>
+                                                    <p class="modal-text">
+                                                        That you are lawfully entitled to access this Web Site and
+                                                        have
+                                                        full legal capacity
+                                                        to perform your obligations under these Terms and Conditions
+                                                        and
+                                                        have the same enforced
+                                                        against you;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        that you will comply with all applicable domestic and
+                                                        international laws, treaties,
+                                                        directives and regulations relating to the use of this Web
+                                                        Site;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        not to introduce to this Web Site any viruses, Trojan
+                                                        horses,
+                                                        worms, time bombs or
+                                                        any other computer programs or files of a harmful nature
+                                                        that
+                                                        will
+                                                        interrupt, limit,
+                                                        destroy or otherwise interfere with the functionality of
+                                                        this
+                                                        Web
+                                                        Site, or any material
+                                                        that is unlawful, defamatory, indecent, obscene or abusive
+                                                        in
+                                                        any
+                                                        way;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        that you will not use any robot, spider, other automatic or
+                                                        manual process or device
+                                                        to "screen scrape", monitor "mine", or copy Web pages on the
+                                                        Web
+                                                        Site or the content
+                                                        contained therein without the express written permission of
+                                                        SUNRISE;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        that you will not use any devices, software or routine to
+                                                        interfere or attempt to
+                                                        interfere with the proper working of the Web Site;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        not to spam any other user of the Web Site for any reason;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        that you will not take any action that imposes an
+                                                        unreasonable
+                                                        or
+                                                        disproportionately
+                                                        large load on the infrastructure of SUNRISE; and
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        not to use framing techniques to enclose any trade mark,
+                                                        logo,
+                                                        trade name or other
+                                                        proprietary information, including images, frames, content,
+                                                        or
+                                                        layout/design of SUNRISE,
+                                                        its affiliates, related companies or its licensors or joint
+                                                        venture
+                                                        partners found on
+                                                        any page of the Web Site without the express written consent
+                                                        of
+                                                        SUNRISE.
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                Except as otherwise expressly permitted by SUNRISE, any access or
+                                                attempt to
+                                                access other areas of the computer system of SUNRISE or other
+                                                information
+                                                contained on
+                                                the said system for any purpose is strictly prohibited.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                                <li>
+                                    <p class="modal-text">
+                                        <b>ACCESS </b>
+                                    </p>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p class="modal-text">
+                                                You may access most areas of the Web Site without registering
+                                                your details
+                                                with us and without us recording any of your personal information,
+                                                however certain areas
+                                                of the Web Site may require you to register. If you submit your
+                                                information to us or
+                                                seek an application to seek access to these restricted areas, you
+                                                are
+                                                indicating that
+                                                you have read our Privacy Policy and are willing for us to deal with
+                                                your data as set
+                                                out in that policy, and as may be further described on the relevant
+                                                pages on the Web
+                                                Site.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                We are not obliged to approve your application for access to
+                                                restricted areas
+                                                of the Web Site, and we may revoke or limit our approval at any time
+                                                at
+                                                our sole and
+                                                absolute discretion and without incurring any liability.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                Whilst we try to ensure that access to the Web Site is always
+                                                available, from
+                                                time to time we may decide to temporarily restrict or block access
+                                                to,
+                                                or use of, all or
+                                                part of the Web Site without notice and reserve the right to do so,
+                                                whether for the
+                                                purpose of upgrading, maintaining or investigating the Web Site or
+                                                for
+                                                any reason which
+                                                we, in our absolute discretion, deem appropriate or necessary. We
+                                                shall
+                                                not be liable or
+                                                responsible for any loss or damage suffered by or caused to you or
+                                                arising out of, in
+                                                connection with or by reason of such shutting down of the Web Site.
+                                                We
+                                                also reserve the
+                                                right to withdraw and/or amend content on the Web Site without
+                                                notice
+                                                and we accept no
+                                                liability, no matter how that may be caused.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                We shall not be liable for any delay or failure in performance
+                                                resulting from
+                                                causes beyond our reasonable control including but not limited to
+                                                outage,
+                                                electrical,
+                                                electronic, technical and computer-related faults and breakdowns,
+                                                fires,
+                                                strikes (of our
+                                                or other employees), insurrection or riots, embargoes, the
+                                                requirements
+                                                of
+                                                any civil or
+                                                military authority, civil commotion, power failure, war, acts of
+                                                foreign
+                                                enemies, acts
+                                                of terrorism or other disturbances or perils of a similar or
+                                                analogous
+                                                nature ("Force
+                                                Majeure Event"). We shall for the duration of such an event, be
+                                                relieved
+                                                of
+                                                any
+                                                obligation as affected by the said event, and the Terms and
+                                                Conditions
+                                                herein shall
+                                                remain in force with regard to all other obligations that are not
+                                                affected
+                                                by such
+                                                event.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                You agree and acknowledge that any data, enquiry or request made
+                                                or submitted
+                                                electronically to the Web Site is subject to the risks of the
+                                                occurrence
+                                                of
+                                                a Force
+                                                Majeure Event under Paragraph 2.6 above and if, in any such event,
+                                                we do
+                                                not
+                                                receive the
+                                                data, enquiry or request submitted by you or if such data, enquiry
+                                                or
+                                                request is lost,
+                                                corrupted or otherwise not accessible, whether wholly or partially
+                                                for
+                                                whatever reason,
+                                                you shall be deemed not to have submitted such data, enquiry or
+                                                request,
+                                                and
+                                                you shall
+                                                have no claim whatsoever against us for compensation, loss or
+                                                damage.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+
+
+                                <li>
+                                    <p class="modal-text">
+                                        <b>INTELLECTUAL PROPERTY RIGHTS </b>
+                                    </p>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p class="modal-text">
+                                                For the purpose of this Paragraph 3:
+                                            </p>
+
+                                            <ol class="list-unstyled list-lower-alpha">
+                                                <li>
+                                                    <p class="modal-text">
+                                                        Any and all text, graphics, photographs, logos, button
+                                                        icons,
+                                                        images, designs,
+                                                        sounds, music, audio clips, video clips, data compilations
+                                                        and
+                                                        software, and the
+                                                        compilation thereof are collectively referred as "SUNRISE
+                                                        Content"; and
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        All trade marks, brand names, logos and related tag-lines
+                                                        and
+                                                        service marks displayed
+                                                        on the Web Site, whether or not appearing in large print or
+                                                        with
+                                                        the trade mark symbol
+                                                        (™ or ®), and whether or not registered anywhere in the
+                                                        world,
+                                                        are collectively referred
+                                                        to as the "SUNRISE Trade Marks".
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                All rights, title and interest in and to the SUNRISE Content,
+                                                and the SUNRISE
+                                                Trade Marks are owned by SUNRISE, its affiliates, related companies
+                                                or
+                                                its licensors or
+                                                joint venture partners.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                Your access to or use of the Web Site should not be construed
+                                                as granting, by
+                                                implication, estoppel or otherwise, any license or right to use the
+                                                SUNRISE Content and
+                                                or the SUNRISE Trade Marks on this Web Site. Other than the limited
+                                                grant of access to
+                                                and viewing of the SUNRISE Content and or the SUNRISE Trade Marks as
+                                                set
+                                                forth above,
+                                                SUNRISE grants you no other privileges or rights in any of the
+                                                SUNRISE
+                                                Content and or
+                                                the SUNRISE Trade Marks.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                You acknowledge that any other use of the SUNRISE Content and
+                                                or the SUNRISE
+                                                Trade Marks, including without limitation, any reproduction,
+                                                modification, distribution,
+                                                transmission, republication, display, broadcast or performance of
+                                                the
+                                                same, without the
+                                                prior written permission of SUNRISE, is strictly prohibited and
+                                                shall
+                                                constitute a
+                                                violation of the intellectual property rights of SUNRISE, its
+                                                affiliates, related
+                                                companies or its licensors or joint venture partners.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                                <li>
+                                    <p class="modal-text">
+                                        <b>LIMITED LICENCE
+                                        </b>
+                                    </p>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p class="modal-text">
+                                                We grant you a limited and revocable licence to access the
+                                                Web Site. Without
+                                                prejudice to the foregoing, this limited licence DOES NOT include
+                                                the
+                                                right to:
+                                            </p>
+
+                                            <ol class="list-unstyled list-lower-alpha">
+                                                <li>
+                                                    <p class="modal-text">
+                                                        frame or utilize framing techniques to enclose the Web Site
+                                                        or any portion thereof;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        modify or download the Web Site or any content (except
+                                                        caching or as necessary to
+                                                        view the Web Site);
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        make any use of the Web Site or content other than personal
+                                                        use;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        create any derivative work based upon either the Web Site or
+                                                        its content;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        collect account information for the benefit of yourself or
+                                                        another party;
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        use any meta tags or any other "hidden text" utilizing the
+                                                        SUNRISE Trade Marks or to
+                                                        otherwise use the SUNRISE Trade Marks; or
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="modal-text">
+                                                        use software robots, spiders, crawlers, or similar data
+                                                        gathering and extraction
+                                                        tools, or take any other action that may impose an
+                                                        unreasonable
+                                                        burden or load on our
+                                                        infrastructure.
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                Any unauthorized use by you of the Web Site terminates the
+                                                limited licence
+                                                set out in this Paragraph 4 without prejudice to any other remedy
+                                                provided by applicable
+                                                law or these Terms and Conditions.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                                <li>
+                                    <p class="modal-text">
+                                        <b>THIRD PARTY LINKS
+                                        </b>
+                                    </p>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p class="modal-text">
+                                                We may provide links to other web sites or resources not
+                                                owned or operated by
+                                                us. We are not responsible for the accuracy or content of these web
+                                                sites or resources,
+                                                and any links we provide does not mean that we are connected with or
+                                                endorse the related
+                                                web site, resource or the information provided in them. Those web
+                                                sites
+                                                or resources may
+                                                have their own terms, conditions and policies, and it is your duty
+                                                to
+                                                ensure that you
+                                                comply with them. We accept no liability, no matter how that may be
+                                                caused, for any
+                                                failure on your part to view, comply or familiarise with any such
+                                                terms,
+                                                conditions and
+                                                policies.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                You may not create a hyperlink to this Web Site, whether via
+                                                social networks
+                                                or otherwise, without our written permission.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p class="modal-text">
+                                        <b>PRIVACY POLICY
+                                        </b>
+                                    </p>
+
+                                    <p class="modal-text">
+                                        SUNRISE respects the privacy of its users and has created a Privacy
+                                        Policy that
+                                        explains the rights and responsibilities with respect to personal
+                                        information
+                                        disclosed
+                                        on the Web Site. Please see SUNRISE’s Privacy Policy <a
+                                            class="cursor-pointer"
+                                            data-toggle="modal"
+                                            data-target="#modal_privacy"
+                                            data-dismiss="modal">here</a>
+                                        for your reference on what information we collect and how we will use and
+                                        protect it. By
+                                        using this Web Site, you accept and consent to the practices described in
+                                        our
+                                        Privacy
+                                        Policy.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="modal-text">
+                                        <b>DISCLAIMER </b>
+                                    </p>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p class="modal-text">
+                                                SUNRISE AND/OR ITS AFFILIATES DO NOT REPRESENT THAT THIS WEB
+                                                SITE OR ITS
+                                                CONTENTS AND MATERIALS ARE APPROPRIATE OR AVAILABLE FOR USE IN ALL
+                                                JURISDICTIONS. IF YOU
+                                                ACCESS OR USE THIS WEB SITE, YOU DO SO AT YOUR OWN INITIATIVE AND
+                                                YOU
+                                                SHALL BE
+                                                RESPONSIBLE FOR COMPLIANCE WITH YOUR LOCAL LAWS.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                NEITHER SUNRISE NOR ANY OF ITS AFFILIATES WARRANTS OR
+                                                GUARANTEES THE ACCURACY
+                                                OR COMPLETENESS OF THE CONTENTS OR MATERIALS ON THIS WEB SITE WHICH
+                                                MAY
+                                                BE OUT OF DATE,
+                                                AND NEITHER SUNRISE NOR ANY OF ITS AFFILIATES MAKES ANY COMMITMENT
+                                                OR
+                                                ASSUMES ANY DUTY
+                                                TO UPDATE SUCH CONTENTS OR MATERIALS.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                NEITHER SUNRISE NOR ANY OF ITS AFFILIATES WARRANTS OR
+                                                GUARANTEES THAT
+                                                MATERIALS AVAILABLE FOR DOWNLOAD FROM THIS WEB SITE WILL BE FREE OF
+                                                INFECTION FROM
+                                                VIRUSES, WORMS, TROJAN HORSES OR OTHER CODE THAT MANIFESTS
+                                                CONTAMINATING
+                                                OR DESTRUCTIVE
+                                                PROPERTIES
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                WITHOUT LIMITING THE FOREGOING, EVERYTHING ON THE WEB SITE IS
+                                                PROVIDED TO YOU
+                                                "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+                                                INCLUDING, BUT NOT
+                                                LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                                                PURPOSE OR
+                                                NON-INFRINGEMENT. ALL USERS ACCESS AND USE THIS WEB SITE AND ITS
+                                                CONTENT
+                                                AT THEIR OWN
+                                                RISK. SUNRISE DOES NOT ACCEPT RESPONSIBILITY FOR INFORMATION ON
+                                                OTHER
+                                                SITES, INCLUDING
+                                                THOSE LINKED TO THIS WEB SITE,
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                WE RESERVE THE RIGHT TO LIMIT PROVISION OF INFORMATION OF OUR
+                                                PRODUCTS OR
+                                                SERVICES TO ANY PERSON, GEOGRAPHIC REGION OR JURISDICTION AND/OR TO
+                                                LIMIT THE QUANTITIES
+                                                OF ANY PRODUCTS OR SERVICES WE PROVIDE.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p class="modal-text"><b>EXCLUSION OF LIABILITY AND INDEMNITY </b></p>
+                                    <ol class="list-unstyled list-number-details start-number-details">
+                                        <li>
+                                            <p class="modal-text">
+                                                TO THE FULLEST EXTENT PERMISSIBLE BY THE APPLICABLE LAW, IN
+                                                NO EVENT SHALL
+                                                SUNRISE OR ANY OF ITS AFFILIATES BE LIABLE TO YOU OR TO ANY PARTY
+                                                FOR
+                                                ANY LOSS OR DAMAGE
+                                                OF ANY KIND HOWSOEVER CAUSED ARISING OUT OF OR IN ANY WAY CONNECTED
+                                                WITH
+                                                THE USE OF THIS
+                                                WEB SITE.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                YOUR USE OF THE WEB SITE IS AT YOUR OWN RISK. IN NO EVENT
+                                                SHALL SUNRISE, ITS
+                                                AFFILIATES OR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING OR
+                                                DELIVERING THE WEB SITE
+                                                BE LIABLE FOR ANY DAMAGES (INCLUDING, WITHOUT LIMITATION, DIRECT,
+                                                INCIDENTAL,
+                                                CONSEQUENTIAL, INDIRECT OR PUNITIVE LOSS OR DAMAGES, OR DAMAGES
+                                                RESULTING FROM LOST
+                                                PROFITS, LOST DATA OR BUSINESS INTERRUPTION) ARISING OUT OF YOUR
+                                                ACCESS
+                                                TO, USE OF OR
+                                                INABILITY TO ACCESS OR USE, THE WEB SITE OR ANY ERRORS OR OMISSIONS
+                                                IN
+                                                ITS CONTENT. THIS
+                                                INCLUDES DAMAGES TO OR VIRUSES THAT MAY INFECT YOUR COMPUTER
+                                                EQUIPMENT
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="modal-text">
+                                                YOU AGREE TO INDEMNIFY, DEFEND AND HOLD HARMLESS SUNRISE, ITS
+                                                OFFICERS,
+                                                DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, AFFILIATES, AND THIRD PARTY
+                                                PARTNERS FROM AND
+                                                AGAINST ALL LOSSES, EXPENSES, DAMAGES AND COSTS, INCLUDING
+                                                REASONABLE
+                                                LEGAL FEES,
+                                                RESULTING FROM ANY VIOLATION BY YOU OF THESE TERMS AND CONDITIONS.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p class="modal-text"><b> GOVERNING LAW &amp; JURISDICTION </b></p>
+
+                                    <p class="modal-text">
+                                        By using this Web Site, you agree that these Terms and Conditions shall be
+                                        governed by the Laws of the Republic of Singapore and any dispute shall be
+                                        submitted to the exclusive jurisdiction of the Courts of the Republic of
+                                        Singapore. You likewise agree to waive all defences of lack of personal
+                                        jurisdiction and forum non conveniens.
+                                    </p>
+                                </li>
+                            </ol>
+
+                            <br/>
+
+                            <p class="modal-text"><b>HOW YOU CAN CONTACT US </b></p>
+
+                            <p class="modal-text">
+                                If you have any questions or comments about this Web Site or the Terms and
+                                Conditions or
+                                in the event that you wish to make a complaint regarding this Web Site, then please
+                                contact us. The contact details are:
+                            </p>
+
+                            <p class="modal-text" style="margin-left: 35px;">
+                                <b>SUNRISE &amp; CO (PTE) LTD</b><br>
+                                9 Kaki Bukit Crescent<br>
+                                Kaki Bukit Techpark 1<br>
+                                Singapore 416240<br>
+                                E-mail: <a href="mailto:info@risesun.com.sg">info@risesun.com.sg </a>
+                                <br>
+                                Telephone: <a href="tel:6562583377">+65 6258 3377</a> (Mondays to Fridays, between
+                                9:00am and 5:00 pm Singapore time)
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--******************-->
+
+
+<div class="wrapper">
     <div class="container">
         <header class="header">
             <div class="row row-inline align-middle">
                 <div class="col-xs-8">
-                    <a href="" class="logo-container"><img class="pull-left" src="build/img/logo_B1.gif" alt="Sunrise"/><img
+                    <a href="" class="logo-container"><img class="pull-left" src="build/img/logo_B1.gif"
+                                                           alt="Sunrise"/><img
                             class="pull-left" src="build/img/logo_B2.png" alt="" Sunrise/></a>
                 </div>
                 <div class="col-xs-4 text-right">
@@ -500,9 +1500,12 @@
             <header class="main-header">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <h3 class="title-container hidden-xs" id="title-animated"
-                            data-text='Look for genuine, authentic and original products | Beware of counterfeit & imitation products'>
-                        </h3>
+                        <div class="title-container hidden-xs">
+                            <ul id="ticker" >
+                                <li>Look for genuine, authentic and original products</li>
+                                <li>Beware of counterfeit & imitation products</li>
+                            </ul>
+                        </div>
 
                         <h3 class="visible-xs title-container">
                             Look for genuine, authentic and original products
@@ -511,10 +1514,14 @@
                     <div class="col-lg-6 hidden-md hidden-sm hidden-xs text-right">
                         <ul>
                             <li>
-                                <img width="140" height="60" src="build/img/yonex.png" alt="YONEX"/>
+                                <a href="http://yonex.com/" target="_blank">
+                                    <img width="140" height="60" src="build/img/yonex.png" alt="YONEX"/>
+                                </a>
                             </li>
                             <li>
-                                <img width="140" height="60" src="build/img/mikasa.png" alt="MIKASA"/>
+                                <a href="http://www.mikasasports.co.jp/e/" target="_blank">
+                                    <img width="140" height="60" src="build/img/mikasa.png" alt="MIKASA"/>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -615,7 +1622,8 @@
                                title="Shoe Box shoe"><img src="build/img/slider/Shoe_Box_w_shoe.png"
                                                           alt="Shoe Box shoe"/></a></div>
                         <div class="swiper-slide">
-                            <a href="build/img/slider/String_edited.png" rel="prettyPhoto[pp_gal]" title="String"><img
+                            <a href="build/img/slider/String_edited.png" rel="prettyPhoto[pp_gal]"
+                               title="String"><img
                                     src="build/img/slider/String_edited.png"
                                     alt="String"/></a></div>
 
@@ -644,7 +1652,7 @@
                 <div class="video-container">
                     <div class="row">
                         <div class="col-sm-6 no-padding-right">
-                            <iframe src="https://www.youtube.com/embed/ohT6BVsYvhw" frameborder="0"
+                            <iframe id="video" src="https://www.youtube.com/embed/ohT6BVsYvhw" frameborder="0"
                                     allowfullscreen></iframe>
                         </div>
                         <div class="col-sm-6 no-padding-left">
@@ -665,19 +1673,19 @@
                 <ul class="nav nav-pills" id="nav-footer">
                     <li class="active"><a href="#">home</a></li>
                     <li><a data-toggle="modal" data-target="#modal_about_us">about us</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">terms of use</a></li>
+                    <li><a data-toggle="modal" data-target="#modal_privacy">privacy policy</a></li>
+                    <li><a data-toggle="modal" data-target="#modal_terms">terms of use</a></li>
                     <li><a data-toggle="modal" data-target="#modal_contact_us">contact</a></li>
                 </ul>
             </div>
 
 
             <div class="customers-container text-center">
-                <span class="customers customers-yonex"></span>
-                <span class="customers customers-mikasa"></span>
-                <span class="customers customers-sunrise-passion"></span>
-                <span class="customers customers-sunrise-click"></span>
-                <span class="customers customers-holostik"></span>
+                <a class="customers customers-yonex" href="http://yonex.com/" target="_blank"></a>
+                <a class="customers customers-mikasa" href="http://www.mikasasports.co.jp/e/" target="_blank"></a>
+                <a class="customers customers-sunrise-passion" href="http://www.sunrisetnt.com/NewFontPages/ProductVerification.aspx#" target="_blank"></a>
+                <a class="customers customers-sunrise-click" href="http://www.sunriseclick.com/" target="_blank"></a>
+                <a class="customers customers-holostik" href="http://www.holostik.com/" target="_blank"></a>
             </div>
 
 
@@ -709,6 +1717,7 @@
 <script src="build/js/vendor/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
 <script src="build/js/vendor/prettyforms/prettyforms.js"></script>
 <script src="build/js/vendor/prettyforms/prettyforms_en.js"></script>
+<script src="build/js/libs/scroller/jquery.li-scroller.1.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"></script>

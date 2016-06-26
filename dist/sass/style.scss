@@ -2,6 +2,7 @@
 @import "modules/_sprite-customers";
 @import "modules/_tooltip";
 @import "modules/modal";
+@import "modules/list-style";
 
 
 body {
@@ -400,6 +401,42 @@ body {
   display:  none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.scroll-container {
+  overflow: hidden;
+  overflow-y: visible;
+}
+
+.scroll-container-contact-us {
+  height: 300px;
+}
+
+.scroll-container-register {
+  height: 750px;
+}
+
+/* ScrollBar style */
+.scroll-container::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 15px;
+  background-color: #bbbbbb;
+
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  background-color: #e0e0e0;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  background-color: #a5a5a5;
+}
 
 
 

@@ -1,0 +1,62 @@
+
+.list-number-details.start-number-details {
+  counter-reset: subsection;
+}
+
+.list-number-details {
+
+  & > li {
+    & > p {
+      padding-left: 30px;
+    }
+
+    &::before {
+      counter-increment: subsection;
+      content: counter(foo) "." counter(subsection) " ";
+      vertical-align: top;
+      float: left;
+      display: table-cell;
+      text-align: right;
+    }
+  }
+}
+
+.list-number.start-number {
+  counter-reset: foo;
+}
+
+.list-number {
+
+  & > li {
+    & > p {
+      padding-left: 30px;
+    }
+    counter-increment: foo;
+
+    &::before {
+      vertical-align: top;
+      float: left;
+      content: counter(foo) ".";
+      display: table-cell;
+      text-align: right;
+    }
+  }
+}
+
+.list-lower-alpha {
+  margin-left: 30px;
+  & > li {
+    counter-increment: foo1;
+
+    & > p {
+      padding-left: 20px;
+    }
+
+    &::before {
+      float: left;
+      content: counter(foo1, lower-alpha) ".";
+      display: table-cell;
+      text-align: right;
+    }
+  }
+}
