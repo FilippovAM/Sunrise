@@ -1,6 +1,6 @@
-@import "modules/_bootstrap-custom";
-@import "modules/_sprite-customers";
-@import "modules/_tooltip";
+@import "modules/bootstrap-custom";
+@import "modules/sprite-customers";
+@import "modules/tooltip";
 @import "modules/modal";
 @import "modules/list-style";
 
@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-  background: no-repeat url('../img/homepage_bg.jpg');
+  background: no-repeat url('../img/homepage_bg.png');
   background-size: cover;
 }
 
