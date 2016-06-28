@@ -67,6 +67,12 @@ only screen and (min-resolution: 144dpi) {
   }
 }
 
+@media screen and (max-width: 1100px){
+  .wrapper {
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 992px){
   .code-cards {
     width: 700px;
@@ -98,6 +104,11 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .code-cards {
     width: 80%;
   }
@@ -131,6 +142,31 @@ only screen and (min-resolution: 144dpi) {
 
   .scroll-container-contact-us {
     margin-top: 50px;
+  }
+
+  .main-header {
+    .title-container {
+      width: 100%;
+      background: no-repeat url("../img/main-header-bg-xs.png");
+      background-size: cover;
+    }
+    .tickercontainer {
+      width: 100%;
+      .mask {
+        width: 95%;
+      }
+    }
+  }
+
+  .header-logo {
+    text-align: center;
+    ul {
+      padding: 0;
+      margin-top: 25px;
+      li {
+        padding: 5px 0;
+      }
+    }
   }
 
 }
