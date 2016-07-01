@@ -1,12 +1,10 @@
 @import "modules/bootstrap-custom";
-@import "modules/sprite-customers";
 @import "modules/tooltip";
 @import "modules/modal";
 @import "modules/list-style";
 
-
 body {
-  font-family: 'Arial','sans-serif';
+  font-family: 'Arial', 'sans-serif';
 }
 
 .container {
@@ -68,7 +66,6 @@ body {
       background-size: cover !important;
     }
   }
-
 
   ul li {
     display: inline-block;
@@ -244,6 +241,32 @@ body {
 
 }
 
+.slider-banner img {
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 290px;
+  background-size: cover;
+}
+
+.banner-img-one {
+  background: no-repeat url(../img/slider-banner/image1.png) 0 0;
+}
+
+.banner-img-two {
+  background: no-repeat url(../img/slider-banner/image2.png) 0 0;
+}
+
+.banner-img-three {
+  background: no-repeat url(../img/slider-banner/image3.png) 0 0;
+}
+
+.banner-img-four {
+  background: no-repeat url(../img/slider-banner/image4.png) 0 0;
+}
+
 .video-background {
   margin-left: -15px;
   margin-right: -15px;
@@ -256,9 +279,9 @@ body {
     z-index: 100;
     width: 100%;
     background-color: #00a450;
-    -webkit-box-shadow: 2px 2px 3px rgba(0,0,1,.35);
-    -moz-box-shadow: 2px 2px 3px rgba(0,0,1,.35);
-    box-shadow: 2px 2px 3px rgba(0,0,1,.35);
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 1, .35);
+    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 1, .35);
+    box-shadow: 2px 2px 3px rgba(0, 0, 1, .35);
 
     &::after {
       bottom: -16px;
@@ -282,7 +305,7 @@ body {
 
     iframe {
       width: 100%;
-      height: 288px;
+      height: 290px;
     }
   }
 
@@ -348,10 +371,17 @@ body {
 }
 
 .customers-container {
-  .customers {
-    margin: 0 15px;
+  margin-top: -10px;
+  .customer img{
+    max-width: 200px;
+    width: 100%;
+    padding: 10px 20px;
     vertical-align: middle;
   }
+  .customer-holostik img{
+    max-width: 468px;
+  }
+
 }
 
 .footer {
@@ -363,11 +393,11 @@ body {
   }
 }
 
-[data-text]{
+[data-text] {
   vertical-align: top;
 }
 
-[data-text] > span{
+[data-text] > span {
   position: absolute;
 }
 
@@ -401,11 +431,11 @@ body {
 }
 
 .scrape-ticket {
-  margin-left: 15px;
+  margin-left: -15px;
 }
 
 .form-group.has-warning .glyphicon {
-  display:  none;
+  display: none;
 }
 
 .cursor-pointer {
@@ -434,14 +464,14 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   background-color: #e0e0e0;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   background-color: #a5a5a5;
 }
 

@@ -4,40 +4,13 @@ $(function () {
         event.preventDefault();
     });
 
-
-    /*// animated title index.html
-     $('#title-animated').attr("data-text", function (i, d) {
-     var $self = $(this),
-     $sentence = d.split("|"),
-     tot = $sentence.length,
-     c = 0;
-
-     // CREATE SPANS INSIDE SPAN
-     for (var i = 0; i < tot; i++) $self.append($('<span/>', {text: $sentence[i]}));
-
-     // COLLECT WORDS AND HIDE
-     $sentence = $self.find("span").hide();
-     $sentence.stop().fadeIn(250);
-
-     // ANIMATE AND LOOP
-     (function loop() {
-     //$self.animate({ width: $words.eq( c ).width() });
-     $sentence.stop().eq(c).fadeOut(250, function () {
-     $sentence.stop().eq(c).fadeIn(250).delay(7000).show(0, loop);
-     });
-     c = ++c % tot;
-     }());
-
-     });*/
-
-
     $('#nav-footer').on('click', 'li', function () {
         $('#nav-footer').find('li').removeClass('active');
         $(this).addClass('active');
     });
 
-    //swiper init(slider)
-    var swiper = new Swiper('.swiper-container', {
+    //swiper init(slider-product)
+    var sliderProduct = new Swiper('.swiper-container.slider-product', {
         pagination: '.swiper-pagination',
         slidesPerView: 3,
         spaceBetween: 30,
@@ -58,6 +31,15 @@ $(function () {
                 spaceBetween: 50
             }
         }
+    });
+
+    //swiper init(slider-banner)
+    var sliderBanner = new Swiper('.swiper-container.slider-banner', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        paginationClickable: false,
+        autoplay: 3000,
+        loop: true
     });
 
     // datetimepicker bootstrap

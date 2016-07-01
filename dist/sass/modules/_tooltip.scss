@@ -1,7 +1,6 @@
 .tooltip-inner {
   padding: 20px;
   width: 158px;
-  height: 128px;
   border: 2px solid #0054a6;
   -webkit-border-radius: 0 10px 10px 10px;
   -moz-border-radius: 0 10px 10px 10px;
@@ -23,7 +22,7 @@
 
   &::after {
     top: -15px;
-    left: 0px;
+    left: 0;
     content: '';
     position: absolute;
     border: 8px solid transparent;
