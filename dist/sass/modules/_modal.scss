@@ -27,9 +27,17 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   line-height: 1;
-  font-size: 35px;
   text-transform: uppercase;
   color: #0054a6;
+}
+
+.modal-title-big {
+  font-size: 35px;
+}
+
+.modal-title-small {
+  margin-top: 15px;
+  font-size: 21px;
 }
 
 .modal-text {
@@ -90,7 +98,6 @@
     padding-bottom: 0;
 
     button[type="submit"] {
-      margin-top: 35px;
       width: 100%;
       max-width: 175px;
     }
@@ -105,9 +112,19 @@
     }
   }
 
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
   .section-separator {
     margin-top: 5px;
   }
+}
+
+.fa-asterisk {
+  color: #e51b24;
 }
 
 .select-placeholder {
@@ -168,7 +185,7 @@
   list-style-position: inside;
 }
 
-ol.ol-number.start-number{
+ol.ol-number.start-number {
   counter-reset: foo;
 }
 

@@ -6,29 +6,29 @@ $(function () {
 
 
     /*// animated title index.html
-    $('#title-animated').attr("data-text", function (i, d) {
-        var $self = $(this),
-            $sentence = d.split("|"),
-            tot = $sentence.length,
-            c = 0;
+     $('#title-animated').attr("data-text", function (i, d) {
+     var $self = $(this),
+     $sentence = d.split("|"),
+     tot = $sentence.length,
+     c = 0;
 
-        // CREATE SPANS INSIDE SPAN
-        for (var i = 0; i < tot; i++) $self.append($('<span/>', {text: $sentence[i]}));
+     // CREATE SPANS INSIDE SPAN
+     for (var i = 0; i < tot; i++) $self.append($('<span/>', {text: $sentence[i]}));
 
-        // COLLECT WORDS AND HIDE
-        $sentence = $self.find("span").hide();
-        $sentence.stop().fadeIn(250);
+     // COLLECT WORDS AND HIDE
+     $sentence = $self.find("span").hide();
+     $sentence.stop().fadeIn(250);
 
-        // ANIMATE AND LOOP
-        (function loop() {
-            //$self.animate({ width: $words.eq( c ).width() });
-            $sentence.stop().eq(c).fadeOut(250, function () {
-                $sentence.stop().eq(c).fadeIn(250).delay(7000).show(0, loop);
-            });
-            c = ++c % tot;
-        }());
+     // ANIMATE AND LOOP
+     (function loop() {
+     //$self.animate({ width: $words.eq( c ).width() });
+     $sentence.stop().eq(c).fadeOut(250, function () {
+     $sentence.stop().eq(c).fadeIn(250).delay(7000).show(0, loop);
+     });
+     c = ++c % tot;
+     }());
 
-    });*/
+     });*/
 
 
     $('#nav-footer').on('click', 'li', function () {
@@ -112,7 +112,19 @@ $(function () {
             map.panTo(map.unproject(px), {animate: true}); // pan to new center
         });
     });
-    
+
+
+    $('.link-privacy').on('click', function () {
+        $('#modal_register').modal('hide')
+            .on('hidden.bs.modal', function () {
+                $('#modal_privacy').modal('show');
+            });
+        $('#modal_terms').modal('hide')
+            .on('hidden.bs.modal', function () {
+                $('#modal_privacy').modal('show');
+            });
+    });
+
 });
 
 

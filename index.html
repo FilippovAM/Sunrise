@@ -148,7 +148,10 @@
                 <div class="modal-header">
                     <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
 
-                    <h3 class="modal-title text-center">REGISTER</h3>
+                    <h3 class="modal-title modal-title-big text-center">REGISTER YOUR PRODUCT</h3>
+
+                    <h2 class="modal-title modal-title-small text-center">Enter your personal particulars and product
+                        details of Racquet & Shoes:</h2>
                 </div>
                 <div class="scroll-container scroll-container-register">
                     <div class="modal-body">
@@ -156,7 +159,9 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label class="control-label"
-                                           for="inputFirstName">first name</label>
+                                           for="inputFirstName">first name
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </label>
 
                                     <input type="text" class="form-control"
                                            id="inputFirstName" name="firstName" data-validation="notempty;"/>
@@ -165,7 +170,9 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label class="control-label"
-                                           for="inputLastName">last name</label>
+                                           for="inputLastName">last name
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </label>
 
                                     <input type="text" class="form-control"
                                            id="inputLastName" name="lastName" data-validation="notempty;"/>
@@ -177,7 +184,9 @@
                             <div class="col-xs-12">
                                 <div class="form-group">
                                     <label class="control-label"
-                                           for="inputEmail">email address</label>
+                                           for="inputEmail">valid email address
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </label>
 
                                     <input type="email" class="form-control"
                                            id="inputEmail" name="email" data-validation="notempty;isemail;"/>
@@ -216,18 +225,12 @@
                                            for="inputTelephone">telephone</label>
 
                                     <input type="tel" class="form-control"
-                                           id="inputTelephone" placeholder="NUMBER" name="telephone"
-                                           data-validation="notempty;isphone;"/>
+                                           id="inputTelephone" name="telephone"/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="section-separator"></div>
-
-                        <p class="text-important">
-                            Register for purchase history of Badminton/Tennis Racket for any future
-                            warranty claim enquiry:
-                        </p>
 
                         <div class="row">
                             <div class="col-md-7 col-xs-12">
@@ -235,8 +238,7 @@
                                     <label class="control-label">Purchase Date</label>
 
                                     <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control" name="date"
-                                               data-validation="notempty;isdate;">
+                                        <input type="text" class="form-control" name="date">
                                                <span class="input-group-addon">
                                                     <span class="fa fa-calendar"></span>
                                                 </span>
@@ -251,7 +253,9 @@
                             <div class="col-xs-12">
                                 <div class="form-group">
                                     <label class="control-label"
-                                           for="inputModel">model</label>
+                                           for="inputModel">model
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </label>
                                     <input type="text" class="form-control"
                                            id="inputModel" name="model" data-validation="notempty;"/>
                                 </div>
@@ -263,7 +267,9 @@
                                 <div class="form-group">
                                     <label class="control-label"
                                            for="inputHologram">SUNRISE HOLOGRAM NUMBER (Number printed on the
-                                        Hologram)</label>
+                                        Hologram)
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </label>
                                     <input type="number" class="form-control"
                                            id="inputHologram" name="hologram" data-validation="notempty;isnumeric;"/>
                                 </div>
@@ -275,7 +281,9 @@
                                 <div class="form-group">
                                     <label class="control-label"
                                            for="inputSerialNumber">SERIAL NUMBER ( Number printed on the racket
-                                        shaft)</label>
+                                        shaft)
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </label>
                                     <input type="number" class="form-control"
                                            id="inputSerialNumber" name="serialNumber"
                                            data-validation="notempty;isnumeric;"/>
@@ -290,7 +298,7 @@
                                     <label class="control-label"
                                            for="inputDealerShopName">DEALER’S SHOP NAME</label>
                                     <input type="text" class="form-control"
-                                           id="inputDealerShopName" name="dealerShopName" data-validation="notempty;"/>
+                                           id="inputDealerShopName" name="dealerShopName"/>
                                 </div>
                             </div>
                         </div>
@@ -308,9 +316,11 @@
                     </div>
 
                     <div class="modal-footer">
-                        <p class="text-left">IMPORTANT: Kindly submit & send us the purchase details of your
-                            Badminton/Tennis
-                            Racquet by filling up above information within 7 days from the date of purchase.</p>
+
+                        <p class="text-important">
+                            By giving your personal information you agree & acknowledge that you have reviewed the terms
+                            of our <a class="link-privacy cursor-pointer">Privacy Policy</a> and consent to Use of Data in accordance therewith
+                        </p>
 
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-danger red-btn no-border-radius">Submit</button>
@@ -1298,10 +1308,7 @@
                                         information
                                         disclosed
                                         on the Web Site. Please see SUNRISE’s Privacy Policy <a
-                                            class="cursor-pointer"
-                                            data-toggle="modal"
-                                            data-target="#modal_privacy"
-                                            data-dismiss="modal">here</a>
+                                            class="cursor-pointer link-privacy">here</a>
                                         for your reference on what information we collect and how we will use and
                                         protect it. By
                                         using this Web Site, you accept and consent to the practices described in
@@ -1484,9 +1491,11 @@
         <header class="header">
             <div class="row row-inline align-middle">
                 <div class="col-xs-8 logo-column">
-                    <a href="" class="logo-container"><img class="pull-left" src="build/img/logo_B1.gif"
-                                                           alt="Sunrise"/><img
-                            class="pull-left" src="build/img/logo_B2.png" alt="" Sunrise/></a>
+                    <a href="" class="logo-container">
+                        <img class="pull-left" src="build/img/logo_B1.gif" alt="Sunrise"/>
+
+                        <h1 class="logo-text text-uppercase pull-left">sunrise</h1>
+                    </a>
                 </div>
                 <div class="col-xs-4 text-right logo-column">
                     <a class="link" data-toggle="modal" data-target="#modal_register" data-toggle-ttoltip="tooltip"
@@ -1500,7 +1509,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="title-container ">
-                            <ul id="ticker" >
+                            <ul id="ticker">
                                 <li>Look for genuine, authentic and original products</li>
                                 <li>Beware of counterfeit & imitation products</li>
                             </ul>
@@ -1527,7 +1536,7 @@
                 <div class="code-cards text-center">
                     <div class="code-cards_title-container">
                         <div class="code-cards-title">
-                            <h2>GET Your Code verified in 3 steps</h2>
+                            <h2><b>GET Your Code verified in 3 steps</b></h2>
                         </div>
                     </div>
                     <div class="row">
@@ -1549,7 +1558,7 @@
                                 <img src="build/img/roundlogo.png" width="53" height="53" alt=""/>
 
                                 <div class="form-group">
-                                    <input class="form-control step_input" type="email" name="email"
+                                    <input class="form-control step_input text-center" type="email" name="email"
                                            placeholder="Enter code here"/>
                                 </div>
                             </div>
@@ -1563,7 +1572,7 @@
                                 <img src="build/img/roundlogo.png" width="53" height="53" alt=""/>
 
                                 <div class="form-group">
-                                    <input class="form-control step_input" type="text" name="verify_code"
+                                    <input class="form-control step_input text-center" type="text" name="verify_code"
                                            placeholder="Enter 4 characters shown above"/>
                                 </div>
 
@@ -1666,7 +1675,7 @@
 
             <div class="text-center">
                 <ul class="nav nav-pills" id="nav-footer">
-                    <li class="active"><a href="#">home</a></li>
+                    <li class="active"><a href="/">home</a></li>
                     <li><a data-toggle="modal" data-target="#modal_about_us">about us</a></li>
                     <li><a data-toggle="modal" data-target="#modal_privacy">privacy policy</a></li>
                     <li><a data-toggle="modal" data-target="#modal_terms">terms of use</a></li>
@@ -1678,7 +1687,8 @@
             <div class="customers-container text-center">
                 <a class="customers customers-yonex" href="http://yonex.com/" target="_blank"></a>
                 <a class="customers customers-mikasa" href="http://www.mikasasports.co.jp/e/" target="_blank"></a>
-                <a class="customers customers-sunrise-passion" href="http://www.sunrisetnt.com/NewFontPages/ProductVerification.aspx#" target="_blank"></a>
+                <a class="customers customers-sunrise-passion"
+                   href="http://www.sunrisetnt.com/NewFontPages/ProductVerification.aspx#" target="_blank"></a>
                 <a class="customers customers-sunrise-click" href="http://www.sunriseclick.com/" target="_blank"></a>
                 <a class="customers customers-holostik" href="http://www.holostik.com/" target="_blank"></a>
             </div>

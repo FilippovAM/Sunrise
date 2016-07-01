@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  padding: 50px 0;
+  padding: 35px 0;
 }
 
 .link {
@@ -37,6 +37,12 @@ body {
 .logo-container {
   display: inline-block;
   min-width: 230px;
+}
+
+.logo-text {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 7px;
 }
 
 .main-header {
@@ -332,6 +338,7 @@ body {
       padding: 7px;
       display: inline-block;
       color: #898989;
+      text-transform: capitalize;
 
       -webkit-transform: skew(-10deg);
       -moz-transform: skew(-10deg);
