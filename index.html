@@ -146,7 +146,7 @@
 <div class="modal modal-register fade" tabindex="-1" role="dialog" id="modal_register">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form role="form" novalidate method="post" action="">
+            <form role="form" id="registerForm" novalidate method="post" action="">
                 <div class="modal-header">
                     <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
 
@@ -204,8 +204,9 @@
                                     <label class="control-label"
                                            for="inputCountry">Select country</label>
 
-                                    <div class="bfh-selectbox bfh-countries" data-country="SG" data-flags="true">
-                                        <input type="hidden" value="" id="inputCountry">
+                                    <div class="bfh-selectbox bfh-countries inputCountry" data-country="SG"
+                                         data-flags="true">
+                                        <input type="hidden" id="inputCountry" value="">
                                         <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox"
                                            href="#">
                                             <span class="bfh-selectbox-option input-medium" data-option=""></span>
@@ -242,7 +243,7 @@
                                     <label class="control-label">Purchase Date</label>
 
                                     <div class="input-group date" id="datepicker">
-                                        <input type="text" class="form-control" name="date">
+                                        <input type="text" class="form-control" name="date" id="date">
                                                <span class="input-group-addon">
                                                     <span class="fa fa-calendar"></span>
                                                 </span>
@@ -491,7 +492,8 @@
                         <div class="col-sm-6">
                             <div class="container-contact-ul">
                                 <h4 class="modal-sub-title modal-sub-title-small">INDIA</h4>
-                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE SPORTS (INDIA) PRIVATE LIMITED</h4>
+                                <h4 class="modal-sub-title modal-sub-title-small color-black">SUNRISE SPORTS (INDIA)
+                                    PRIVATE LIMITED</h4>
 
                                 <div class="contact-ul">
                                     <ul class="fa-ul">
@@ -1504,6 +1506,31 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--******************-->
+
+
+<!--modal Thank you for registering-->
+<div class="modal fade modal-about modal-thank" tabindex="-1" role="dialog" id="modal_thank_for_registering">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-times-circle close" data-dismiss="modal" aria-hidden="true"></i>
+
+                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
+
+                <h3 class="modal-title text-center">Thank you!</h3>
+            </div>
+            <div class="modal-body text-center">
+                <p>
+                    Thank you for registering your product.
+                </p>
             </div>
         </div>
         <!-- /.modal-content -->

@@ -44,7 +44,7 @@ $(function () {
         slidesPerView: 1,
         spaceBetween: 30,
         paginationClickable: false,
-        autoplay: 3000,
+        autoplay: 5000,
         loop: true
     });
 
@@ -111,6 +111,60 @@ $(function () {
             .on('hidden.bs.modal', function () {
                 $('#modal_privacy').modal('show');
             });
+    });
+
+    $('#registerForm').on('submit', function (e) {
+        e.preventDefault();
+        PrettyForms.setFormContainer($(this));
+        PrettyForms.Validator.validate($(this).find('#inputFirstName'));
+        PrettyForms.Validator.validate($(this).find('#inputLastName'));
+        PrettyForms.Validator.validate($(this).find('#inputEmail'));
+        PrettyForms.Validator.validate($(this).find('#inputModel'));
+        PrettyForms.Validator.validate($(this).find('#inputHologram'));
+
+        if ($(this).find('.has-warning').length == 0) {
+            var firstName = $('#inputFirstName').val();
+            var lastName = $('#inputLastName').val();
+            var email = $('#inputEmail').val();
+            var country = $('.inputCountry .bfh-selectbox-option').text();
+            var telephone = $('#inputTelephone').val();
+            var date = $('#date').val();
+            var productType = $('#inputProductType').val();
+            var model = $('#inputModel').val();
+            var hologram = $('#inputHologram').val();
+            var serialNumber = $('#inputSerialNumber').val();
+            var dealer = $('#inputDealerShopName').val();
+            var dealerReceipt = $('#inputDealerReceipt').val();
+
+            $.ajax({
+                url: '/register',
+                type: 'POST',
+                data: {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    country: country,
+                    telephone: telephone,
+                    date: date,
+                    productType: productType,
+                    model: model,
+                    hologram: hologram,
+                    serialNumber: serialNumber,
+                    dealer: dealer,
+                    dealerReceipt: dealerReceipt
+                },
+
+                success: function () {
+                    $('#modal_register').modal('hide');
+                    $('#modal_thank_for_registering').modal('show');
+                },
+                // remove later
+                error: function () {
+                    $('#modal_register').modal('hide');
+                    $('#modal_thank_for_registering').modal('show');
+                }
+            })
+        }
     });
 
 });

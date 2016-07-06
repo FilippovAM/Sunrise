@@ -211,4 +211,15 @@ ol.ol-number.start-number {
   counter-reset: foo;
 }
 
+.modal-thank .modal-dialog {
+  max-width: 400px;
+  width: 100%;
+
+  .modal-body {
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
 
