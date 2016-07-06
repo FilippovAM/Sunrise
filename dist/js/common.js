@@ -103,16 +103,15 @@ $(function () {
 
 
     $('.link-privacy').on('click', function () {
-        $('#modal_register').modal('hide')
-            .on('hidden.bs.modal', function () {
-                $('#modal_privacy').modal('show');
-            });
-        $('#modal_terms').modal('hide')
-            .on('hidden.bs.modal', function () {
-                $('#modal_privacy').modal('show');
-            });
+        $('#modal_register').modal('hide').on('hidden.bs.modal', function () {
+            $('#modal_privacy').modal('show');
+        });
+        $('#modal_terms').modal('hide').on('hidden.bs.modal', function () {
+            $('#modal_privacy').modal('show');
+        });
     });
 
+    // send ajax register and show thanks-modal
     $('#registerForm').on('submit', function (e) {
         e.preventDefault();
         PrettyForms.setFormContainer($(this));
@@ -155,13 +154,15 @@ $(function () {
                 },
 
                 success: function () {
-                    $('#modal_register').modal('hide');
-                    $('#modal_thank_for_registering').modal('show');
+                    $('#modal_register').modal('hide').on('hidden.bs.modal', function () {
+                        $('#modal_thank_for_registering').modal('show');
+                    });
                 },
                 // remove later
                 error: function () {
-                    $('#modal_register').modal('hide');
-                    $('#modal_thank_for_registering').modal('show');
+                    $('#modal_register').modal('hide').on('hidden.bs.modal', function () {
+                        $('#modal_thank_for_registering').modal('show');
+                    });
                 }
             })
         }
