@@ -31,7 +31,7 @@
 }
 
 .modal-title-big {
-  font-size: 35px;
+  font-size: 27px;
 }
 
 .modal-title-small {
@@ -120,6 +120,29 @@
   .section-separator {
     margin-top: 5px;
   }
+
+  .bootstrap-select .dropdown-toggle {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #fff;
+    height: 50px;
+    background-image: none;
+    border: 1px solid #959595;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  }
+
+  .dropdown-menu>li>a {
+    padding: 10px 20px;
+  }
+
 }
 
 .fa-asterisk {

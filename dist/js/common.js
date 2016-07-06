@@ -33,12 +33,18 @@ $(function () {
         }
     });
 
+    // selectpicker setting
+    $('.selectpicker').selectpicker({
+        iconBase: 'fa',
+        tickIcon: 'fa-check'
+    });
+
     //swiper init(slider-banner)
     var sliderBanner = new Swiper('.swiper-container.slider-banner', {
         slidesPerView: 1,
         spaceBetween: 30,
         paginationClickable: false,
-        autoplay: 3000,
+        autoplay: 5000,
         loop: true
     });
 

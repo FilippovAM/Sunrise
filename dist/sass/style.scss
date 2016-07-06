@@ -13,7 +13,7 @@ body {
 
 .wrapper {
   background: no-repeat url('../img/homepage_bg.png') black;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .header {
@@ -32,27 +32,46 @@ body {
   background-color: #fff;
 }
 
+.section-background-main {
+  margin-top: 60px;
+  background: no-repeat url('../img/main_bg.png') #fff;
+  background-size: cover;
+}
+
 .logo-container {
   display: inline-block;
   min-width: 230px;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .logo-text {
   color: white;
   font-family: 'Oswald', sans-serif;
+  margin: 0;
   margin-left: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
 }
 
 .main-header {
+  width: 100%;
+  display: inline-block;
   padding: 0 10px;
 
   .title-container {
     position: relative;
-    background: no-repeat url('../img/main-header-bg.png');
+    background: no-repeat url('../img/main-header-bg.png') 100% 100%;
+    background-size: cover;
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 646px;
+    max-width: 615px;
+    width: 62%;
     height: 62px;
     color: #facc2e;
     margin: 0;
@@ -60,17 +79,29 @@ body {
     font-size: 18px;
     line-height: 25px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.36);
-    &.visible-xs {
-      height: auto;
-      width: 100%;
-      background-size: cover !important;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: no-repeat url('../img/birdie.png') 0 0;
+      top: 0;
+      right: -12px;
+      width: 65px;
+      height: 66px;
+      background-size: 100%;
     }
   }
 
   ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
   }
+}
+
+.header-logo {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .section-separator {
@@ -90,11 +121,21 @@ body {
   }
 }
 
+.tickercontainer {
+  width: 90% !important;
+}
+
+.tickercontainer .mask {
+  width: 100% !important;
+}
+
 .no-border-radius {
   border-radius: 0;
 }
 
 .code-cards {
+  position: relative;
+  top: -40px;
   width: 800px;
   margin: 0 auto;
 
@@ -105,23 +146,11 @@ body {
 
   .step {
     padding: 95px 20px 20px;
-    background-color: #fff200;
+    background-color: #FFCC00;
     -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     -moz-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     background-size: cover !important;
-  }
-
-  .step_1 {
-    background: no-repeat url(../img/step_1.png);
-  }
-
-  .step_2 {
-    background: no-repeat url(../img/step_2.png);
-  }
-
-  .step_3 {
-    background: no-repeat url(../img/step_3.png);
   }
 
   & > p {
@@ -206,10 +235,10 @@ body {
 .slider {
   position: relative;
   margin: 50px 35px;
+  margin-top: 0;
 
   .swiper-container {
     width: 800px;
-    padding: 45px 0;
 
     a[rel="prettyPhoto[pp_gal]"] img {
       width: 100%;
@@ -337,16 +366,16 @@ body {
 .nav {
   margin-bottom: 0;
   display: inline-block;
-  padding: 20px 0;
+  padding: 0;
   li {
     display: inline-block;
-    padding: 10px;
+    padding: 0 10px;
     font-size: 13px;
     text-transform: uppercase;
     position: relative;
 
     &::before {
-      content: '/';
+      content: '|';
       position: relative;
       left: -10px;
       color: #898989;
@@ -360,25 +389,25 @@ body {
       cursor: pointer;
       padding: 7px;
       display: inline-block;
-      color: #898989;
+      color: white;
       text-transform: capitalize;
 
-      -webkit-transform: skew(-10deg);
-      -moz-transform: skew(-10deg);
-      -o-transform: skew(-10deg);
+      &:hover {
+        background-color: #337ab7;
+      }
     }
   }
 }
 
 .customers-container {
-  margin-top: -10px;
-  .customer img{
+  margin-top: 20px;
+  .customer img {
     max-width: 200px;
     width: 100%;
     padding: 10px 20px;
     vertical-align: middle;
   }
-  .customer-holostik img{
+  .customer-holostik img {
     max-width: 468px;
   }
 
@@ -390,6 +419,10 @@ body {
     font-size: 10px;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 0;
+  }
+  .nav-pills {
+    margin: 5px 0;
   }
 }
 
@@ -410,12 +443,13 @@ body {
 }
 
 .form-control {
+  font-size: 13px;
   height: 50px;
   border-color: #959595;
 }
 
 .control-label {
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
 }
 
