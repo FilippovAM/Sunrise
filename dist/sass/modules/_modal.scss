@@ -35,13 +35,13 @@
 }
 
 .modal-title-small {
-  margin-top: 15px;
-  font-size: 21px;
+  margin-top: 5px;
+  font-size: 16px;
 }
 
 .modal-text {
   font-size: 13px;
-  color: #363636;
+  color: grey;
   text-align: justify;
 }
 
@@ -68,8 +68,12 @@
 .modal-register {
   color: #363636;
 
+  .modal-header {
+    margin-bottom: 15px;
+  }
+
   .modal-body {
-    padding-top: 30px;
+    padding-top: 0;
     padding-right: 130px;
     padding-left: 130px;
   }
@@ -85,9 +89,6 @@
     margin-right: -10px;
     width: auto;
     max-width: none;
-  }
-  .bfh-selectbox .bfh-selectbox-toggle {
-    padding-top: 15px;
   }
 
   .modal-footer {
@@ -129,7 +130,7 @@
     line-height: 1.42857;
     color: #555;
     background-color: #fff;
-    height: 50px;
+    height: 35px;
     background-image: none;
     border: 1px solid #959595;
     border-radius: 4px;
@@ -139,7 +140,7 @@
 
   }
 
-  .dropdown-menu>li>a {
+  .dropdown-menu > li > a {
     padding: 10px 20px;
   }
 

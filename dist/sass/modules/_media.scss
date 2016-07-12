@@ -128,9 +128,6 @@ only screen and (min-resolution: 144dpi) {
   .code-cards .step {
     margin-top: 30px;
   }
-  .code-cards .step:first-child {
-    margin-top: 60px;
-  }
 
   .nav-pills {
     text-align: center;
@@ -172,6 +169,31 @@ only screen and (min-resolution: 144dpi) {
     }
   }
 
+  .code-cards .step {
+    padding-top: 25px;
+  }
+
+  .code-cards .step.step_1 {
+    padding-top: 95px;
+  }
+
+  .section-background-main {
+    margin-top: 35px;
+  }
+
+  .section-separator {
+    margin: 5px 0;
+  }
+
+  .header-logo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    ul {
+      margin: 0;
+    }
+  }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -183,10 +205,6 @@ only screen and (min-resolution: 144dpi) {
     padding: 0 15px !important;
   }
 
-  .code-cards .step.step_1 {
-    margin-top: 110px;
-  }
-
   .logo-column {
     margin-top: 18px;
   }
@@ -195,16 +213,57 @@ only screen and (min-resolution: 144dpi) {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .code-cards-title h2 {
+    font-size: 25px;
+  }
+
+  .code-cards .step:first-child {
+    margin-top: 30px;
+  }
+
+  .code-cards .step {
+    margin-top: 15px;
+  }
+
+  .customers-container .customer img {
+    max-width: 49%;
+  }
+
+  .customers-container .customer-holostik img {
+    max-width: 100%;
+  }
+
 }
 
-@media screen and (max-width: 390px) {
-  .header .logo-column {
-    width: 100%;
+@media screen and (max-width: 400px){
+  .preheader .preheader-text {
+    display: block;
     text-align: center;
+    float: none !important;
+  }
+
+  .header-logo ul li {
+    width: 49%;
+    padding: 10px;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
-
+@media screen and (max-width: 390px) {
+  .logo-container > img {
+    width: 55px;
+    height: 55px;
+  }
+  .code-cards-title h2 {
+    font-size: 20px;
+  }
+}
 
 
 

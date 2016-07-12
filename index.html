@@ -152,7 +152,7 @@
 
                     <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
 
-                    <h3 class="modal-title modal-title-big text-center">REGISTER YOUR PRODUCT</h3>
+                    <h3 class="modal-title text-center">REGISTER YOUR PRODUCT</h3>
 
                     <h2 class="modal-title modal-title-small text-center">Enter your personal particulars and product
                         details of Racquets & Shoes:</h2>
@@ -303,7 +303,6 @@
                                     <label class="control-label"
                                            for="inputSerialNumber">SERIAL NUMBER ( Number printed on the racket
                                         shaft)
-                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
                                     </label>
                                     <input type="number" class="form-control"
                                            id="inputSerialNumber" name="serialNumber"/>
@@ -337,7 +336,7 @@
 
                     <div class="modal-footer">
 
-                        <p class="text-important">
+                        <p class="text-important text-center">
                             By giving your personal information you agree & acknowledge that you have reviewed
                             the terms
                             of our <a class="link-privacy cursor-pointer">Privacy Policy</a> and consent to Use
@@ -1555,11 +1554,17 @@
                 <div class="col-xs-4 text-right logo-column">
                     <a class="link" data-toggle="modal" data-target="#modal_register" data-toggle-ttoltip="tooltip"
                        data-placement="bottom"
-                       title="Register your product details here for future reference.">register</a>
+                       title="Register your product">register</a>
                 </div>
             </div>
         </header>
         <main class="main">
+            <div class="preheader clearfix">
+                <b><p class="pull-left preheader-text">welcome to sunrise</p></b>
+                <b>
+                    <time id="datetime" class="pull-right preheader-text">date</time>
+                </b>
+            </div>
             <header class="main-header">
 
                 <div class="title-container">
@@ -1573,17 +1578,13 @@
                     <ul>
                         <li>
                             <a href="http://yonex.com/" target="_blank">
-                                <img class="hidden-xs" width="140" height="60" src="build/img/yonex.png" alt="YONEX"/>
-                                <img class="hidden-lg hidden-md hidden-sm" width="100" height="40"
-                                     src="build/img/yonex.png" alt="YONEX"/>
+                                <img width="140" height="60" src="build/img/yonex.png" alt="YONEX"/>
                             </a>
                         </li>
 
                         <li>
                             <a href="http://www.mikasasports.co.jp/e/" target="_blank">
-                                <img class="hidden-xs" width="140" height="60" src="build/img/mikasa.png" alt="MIKASA"/>
-                                <img class="hidden-lg hidden-md hidden-sm" width="100" height="40"
-                                     src="build/img/mikasa.png" alt="MIKASA"/>
+                                <img width="140" height="60" src="build/img/mikasa.png" alt="MIKASA"/>
                             </a>
                         </li>
                     </ul>
@@ -1662,31 +1663,32 @@
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Racquet_full.png" rel="prettyPhoto[pp_gal]"
                                    title="Badminton Racquet"><img src="build/img/slider-product/Racquet_full.png"
-                                                             alt="Badminton Racquet"/></a>
+                                                                  alt="Badminton Racquet"/></a>
                             </div>
 
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Aerosensa_Mavis.png" rel="prettyPhoto[pp_gal]"
-                                   title="Shuttlecock (Feather & Nylon)"><img src="build/img/slider-product/Aerosensa_Mavis.png"
-                                                                alt="Shuttlecock (Feather & Nylon)"/></a>
+                                   title="Shuttlecock (Feather & Nylon)"><img
+                                        src="build/img/slider-product/Aerosensa_Mavis.png"
+                                        alt="Shuttlecock (Feather & Nylon)"/></a>
                             </div>
 
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Grips.png" rel="prettyPhoto[pp_gal]"
                                    title="Griptape"><img src="build/img/slider-product/Grips.png"
-                                                      alt="Griptape"/></a>
+                                                         alt="Griptape"/></a>
                             </div>
 
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Apparel_tag.png" rel="prettyPhoto[pp_gal]"
                                    title="Apparel"><img src="build/img/slider-product/Apparel_tag.png"
-                                                                alt="Apparel"/></a>
+                                                        alt="Apparel"/></a>
                             </div>
 
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Royalty_Box_w_shoe.png" rel="prettyPhoto[pp_gal]"
                                    title="Footwear"><img src="build/img/slider-product/Royalty_Box_w_shoe.png"
-                                                                 alt="Footwear"/></a>
+                                                         alt="Footwear"/></a>
                             </div>
 
                             <div class="swiper-slide">
@@ -1699,14 +1701,14 @@
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Bag_tag.png" rel="prettyPhoto[pp_gal]"
                                    title="Sports Bag"><img src="build/img/slider-product/Bag_tag.png"
-                                                        alt="Sports Bag"/></a>
+                                                           alt="Sports Bag"/></a>
                             </div>
 
 
                             <div class="swiper-slide">
                                 <a href="build/img/slider-product/hr/Shoe_Box_w_shoe.png" rel="prettyPhoto[pp_gal]"
                                    title="Footwear"><img src="build/img/slider-product/Shoe_Box_w_shoe.png"
-                                                              alt="Footwear"/></a>
+                                                         alt="Footwear"/></a>
                             </div>
 
                             <div class="swiper-slide">
@@ -1721,10 +1723,10 @@
                     <div class="swiper-button-next"></div>
 
                 </div>
-                <div class="video-background">
-                    <div class="video-container">
-                        <div class="row">
-                            <div class="col-sm-6 no-padding-right">
+                <div class="video-background clearfix">
+                    <div class="video-container clearfix">
+                        <div class="clearfix">
+                            <div class="pull-left green-container-slider">
                                 <!-- Swiper -->
                                 <div class="swiper-container slider-banner">
                                     <div class="swiper-wrapper">
@@ -1752,7 +1754,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 no-padding-left">
+                            <div class="pull-left green-container-video">
                                 <iframe id="video" src="https://www.youtube.com/embed/ohT6BVsYvhw" frameborder="0"
                                         allowfullscreen></iframe>
                             </div>

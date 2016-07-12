@@ -14,6 +14,8 @@ $(function () {
         pagination: '.swiper-pagination',
         slidesPerView: 3,
         spaceBetween: 30,
+        autoplay: 3000,
+        loop: true,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -168,7 +170,43 @@ $(function () {
         }
     });
 
+    // datetime
+    $('#datetime').text(function () {
+        var today = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var day = days[today.getDay()];
+        var month = months[today.getMonth()];
+        var dd = today.getDate();
+
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+
+        return day + ', ' + dd + ' ' + month;
+    });
+
+    // width for video container
+    var mq = window.matchMedia('screen and (min-width: 768px)');
+    if (mq.matches) {
+        function widthForVideo() {
+            $('.green-container-video').width(function () {
+                return ($('.video-container').width() - $('.green-container-slider').width());
+            });
+        }
+
+        $(window).resize(widthForVideo);
+        $(window).on('load', widthForVideo);
+    } else {
+        // the width of browser is less then 768px
+        $('.green-container-video').width('100%');
+        $('.video-background .green-container-slider').width('100%');
+        sliderBanner.update();
+        sliderBanner.slideNext();
+    }
+
 });
+
 
 
 

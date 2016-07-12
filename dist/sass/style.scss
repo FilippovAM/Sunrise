@@ -20,6 +20,17 @@ body {
   padding: 35px 0;
 }
 
+.preheader {
+  padding: 15px;
+}
+
+.preheader-text {
+  color: #363636;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .link {
   font-size: 14px;
   text-transform: uppercase;
@@ -28,7 +39,7 @@ body {
 }
 
 .main {
-  padding: 30px 0;
+  padding-bottom: 30px;
   background-color: #fff;
 }
 
@@ -40,7 +51,7 @@ body {
 
 .logo-container {
   display: inline-block;
-  min-width: 230px;
+  min-width: 180px;
 
   img {
     display: inline-block;
@@ -102,6 +113,10 @@ body {
 .header-logo {
   vertical-align: middle;
   display: inline-block;
+  float: right;
+  ul {
+    padding-left: 0;
+  }
 }
 
 .section-separator {
@@ -146,7 +161,7 @@ body {
 
   .step {
     padding: 95px 20px 20px;
-    background-color: #FFCC00;
+    background-color: #FFFF01;
     -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     -moz-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
@@ -361,6 +376,15 @@ body {
     }
   }
 
+  .green-container-slider {
+    width: 527px;
+    display: inline-block;
+  }
+
+  .green-container-video {
+    width: 493px;
+  }
+
 }
 
 .nav {
@@ -444,7 +468,7 @@ body {
 
 .form-control {
   font-size: 13px;
-  height: 50px;
+  height: 35px;
   border-color: #959595;
 }
 
