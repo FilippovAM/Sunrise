@@ -161,7 +161,7 @@ body {
 
   .step {
     padding: 95px 20px 20px;
-    background-color: #FFFF01;
+    background-color: #ffcc00;
     -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     -moz-box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 1, .13);
@@ -174,8 +174,9 @@ body {
   }
 
   .title-step {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 0;
+    text-transform: uppercase;
 
     span {
       color: #ed1c24;
@@ -424,17 +425,80 @@ body {
 }
 
 .customers-container {
+  padding: 0 100px;
   margin-top: 20px;
+  .customer {
+    display: inline-block;
+    vertical-align: bottom;
+  }
   .customer img {
     max-width: 200px;
     width: 100%;
-    padding: 10px 20px;
     vertical-align: middle;
   }
   .customer-holostik img {
-    max-width: 468px;
+    max-width: 395px;
   }
 
+}
+
+.social-media-nav {
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  h2 {
+    font-size: 15px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .social-media-icons {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    vertical-align: middle;
+
+    li {
+      display: inline-block;
+    }
+
+    .fa {
+      color: black;
+      background: transparent;
+      font-size: 17px;
+      transition-duration: 0.8s;
+    }
+
+    a {
+      transition-duration: 0.8s;
+      background-color: #FECB2F;
+      display: inline-block;
+      margin-left: 5px;
+      text-align: center;
+      vertical-align: middle;
+      height: 32px;
+      width: 32px;
+      padding: 7px;
+
+      :first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        background: black;
+
+        .fa {
+          color: #FECB2F;
+        }
+      }
+    }
+  }
 }
 
 .footer {

@@ -84,6 +84,20 @@ only screen and (min-resolution: 144dpi) {
     text-align: center;
     margin-top: 20px;
   }
+
+  .customers-container {
+    padding: 0 25px;
+  }
+
+  .customers-container [class*='col-'] {
+    text-align: center;
+  }
+
+  .customer-holostik {
+    margin-top: 15px;
+  }
+
+
 }
 
 @media screen and (max-width: 992px) {
@@ -194,6 +208,14 @@ only screen and (min-resolution: 144dpi) {
     }
   }
 
+  .customers-container .customer img {
+    padding: 10px 20px;
+  }
+
+  .customer-holostik {
+    margin-top: 0;
+  }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -234,6 +256,14 @@ only screen and (min-resolution: 144dpi) {
     max-width: 100%;
   }
 
+  .social-media-nav h2 {
+    margin-bottom: 10px;
+  }
+
+  .customers-container .customer img {
+    padding: 5px;
+  }
+
 }
 
 @media screen and (max-width: 400px){
@@ -256,10 +286,6 @@ only screen and (min-resolution: 144dpi) {
 }
 
 @media screen and (max-width: 390px) {
-  .logo-container > img {
-    width: 55px;
-    height: 55px;
-  }
   .code-cards-title h2 {
     font-size: 20px;
   }
