@@ -140,7 +140,7 @@ only screen and (min-resolution: 144dpi) {
     width: 80%;
   }
   .code-cards .step {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .nav-pills {
@@ -234,10 +234,6 @@ only screen and (min-resolution: 144dpi) {
     padding: 0 15px !important;
   }
 
-  .logo-column {
-    margin-top: 18px;
-  }
-
   .modal-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -267,8 +263,12 @@ only screen and (min-resolution: 144dpi) {
     padding: 5px;
   }
 
-  .logo-container{
-    padding: 10px 0;
+  .main-header .title-container {
+    background: no-repeat url('../img/main-header-bg-dark.png') 100% 100%;
+  }
+
+  .customers-container .customer {
+      padding: 0;
   }
 
 }
