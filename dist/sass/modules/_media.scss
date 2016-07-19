@@ -222,6 +222,12 @@ only screen and (min-resolution: 144dpi) {
 
 }
 
+@media screen and (max-width: 470px) {
+  .social-media-nav h2 {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 450px) {
 
   .preheader .preheader-text {
@@ -256,11 +262,7 @@ only screen and (min-resolution: 144dpi) {
   }
 
   .customers-container .customer-holostik img {
-    max-width: 100%;
-  }
-
-  .social-media-nav h2 {
-    margin-bottom: 10px;
+    max-width: 85%;
   }
 
   .customers-container .customer img {
