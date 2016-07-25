@@ -58,7 +58,7 @@ $(function () {
             up: "fa fa-arrow-up",
             down: "fa fa-arrow-down"
         },
-        format: 'mm.dd.yyyy'
+        format: 'mm/dd/yyyy'
     });
 
 

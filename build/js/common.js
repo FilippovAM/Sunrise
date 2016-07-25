@@ -58,7 +58,7 @@ $(function () {
             up: "fa fa-arrow-up",
             down: "fa fa-arrow-down"
         },
-        format: 'mm.dd.yyyy'
+        format: 'mm/dd/yyyy'
     });
 
 
@@ -185,7 +185,7 @@ $(function () {
 
         return day + ', ' + dd + ' ' + month;
     });
-    
+
     // width for video container
     var mq = window.matchMedia('screen and (min-width: 768px)');
     if (mq.matches) {
