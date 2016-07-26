@@ -201,12 +201,19 @@ $(function () {
         // the width of browser is less then 768px
         $('.green-container-video').width('100%');
         $('.video-background .green-container-slider').width('100%');
-        sliderBanner.update();
-        sliderBanner.slideNext();
+        sliderBanner.destroy(true, true);
+
+        //swiper init(slider-banner)
+        sliderBanner = new Swiper('.swiper-container.slider-banner', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            paginationClickable: false,
+            autoplay: 5000,
+            loop: true
+        });
+
     }
 
 });
-
-
 
 
